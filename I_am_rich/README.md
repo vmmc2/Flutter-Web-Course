@@ -1,4 +1,4 @@
-# com
+I Am Rich Application
 
 A new Flutter application.
 
