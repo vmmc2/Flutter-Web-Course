@@ -42,6 +42,7 @@ class MyApp extends StatelessWidget {
                   ),
                   Container(
                     color: Colors.green,
+                    margin: EdgeInsets.fromLTRB(55.0, 0.0, 55.0, 0.0),
                     height: 100.0,
                     width: 100.0,
                   ),
