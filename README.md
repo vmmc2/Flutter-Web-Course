@@ -8,3 +8,6 @@ Flutter Web Course Assignments
 ## Hot Reload not working?
 * Hot Reload is a tool provided by the Flutter Team which allows us to test the changes we made in our code almost simultaneously after we actually changed it.
 * But Hot Reload will only work if we are dealing with Stateless or Stateful Widgets. Otherwise, it won't work properly.
+
+## More about Hot Reload
+* Hot Reload only changes the visual aspect of our app. That means that it won't lose the state of our app and neither its data.
