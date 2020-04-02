@@ -10,7 +10,7 @@ Flutter Web Course Assignments
 * Hot Restart refreshes both our visual aspects and our data/state. It is indeed used to restart our data.
 
 ## Difference between Margin and Padding?
-* Margin is used for the outside of out Widget.
+* Margin is used for the outside of our Widget.
 * Padding is used for the inside of our Widget.
 
 ## Hot Reload not working?
