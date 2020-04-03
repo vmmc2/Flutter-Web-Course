@@ -1,3 +1,3 @@
-# Mi Card Challenged (Without using Card() Widget)
+# Mi Card Challenge (Without using Card() Widget)
 
 ![](img.png.png)
