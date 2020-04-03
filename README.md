@@ -5,6 +5,9 @@ Flutter Web Course Assignments
 * The Dart SDK is under the flutter folder, more specific the path is usually the following: flutter\bin\cache\dart-sdk
 * After setting the correct path described above, you should hit the button: "Get Depedencies" and everything should be ok.
 
+## How to change the length of the line produced by the Divider() widget?
+* The straightforward solution is to wrap the Divider() widget with a SizedBox() widget, set its child to the Divider() widget, and set the width property of the SizedBox() widget to our own choice.
+
 ## Difference between Hot Reload and Hot Restart?
 * Hot Reload is just used to change the visual part (the UI) of our app. It DOES NOT affect the state/data of our app.
 * Hot Restart refreshes both our visual aspects and our data/state. It is indeed used to restart our data.
