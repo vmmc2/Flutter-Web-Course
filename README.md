@@ -5,6 +5,7 @@ Flutter Web Course Assignments
 * Well, to do that we can just wrap this Image() Widget with a FlatButton() Widget or other type of button.
 * Remember that the FlatButton() Widget already comes with padding.
 * When dealing with Image(), the best option is to use the FlatButton() because the other ones add an strange effect in its animation. So visually speaking, it's kinda bad.
+* The "OnPressed:" property of Widgets that represents buttons expects an anonymous function. That is: a function that does not have a name nor a return type.
 
 ## About the Expanded() Widget
 * The Expanded() widget is used only inside a Row() or a Column(). This means that in the children property of Row() and Column() we can use this widget. And the Expanded() widget tells its child to occupy as much space as it can inside the row or inside the column.
