@@ -1,6 +1,9 @@
 # Flutter-Web-Course
 Flutter Web Course Assignments
 
+# About the Expanded() Widget
+* The Expanded() widget is used only inside a Row() or a Column(). This means that in the children property of Row() and Column() we can use this widget. And the Expanded() widget tells its child to occupy as much space as it can inside the row or inside the column.
+
 ## Problems when cloning a repo from GitHub and Android Studio complaining about the Dart SDK?
 * The Dart SDK is under the flutter folder, more specific the path is usually the following: flutter\bin\cache\dart-sdk
 * After setting the correct path described above, you should hit the button: "Get Depedencies" and everything should be ok.
