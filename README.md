@@ -1,7 +1,11 @@
 # Flutter-Web-Course
 Flutter Web Course Assignments
 
-# About the Expanded() Widget
+## What if I want to use a Image() Widget as a button?
+* Well, to do that we can just wrap this Image() Widget with a FlatButton() Widget or other type of button.
+* Remember that the FlatButton() Widget already comes with padding.
+
+## About the Expanded() Widget
 * The Expanded() widget is used only inside a Row() or a Column(). This means that in the children property of Row() and Column() we can use this widget. And the Expanded() widget tells its child to occupy as much space as it can inside the row or inside the column.
 * If we have only one expanded() inside a Row() or a Column(), it will occupy the whole Row() or the whole Column(). If we have more than one, then they will occupy the available space equally.
 * You can also specify how much space it should take compared to other Expanded() widgets present on the same Row() or Column(). To do that, we use the "flex" property. Which works like a fraction.
