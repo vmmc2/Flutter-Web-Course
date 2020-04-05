@@ -6,6 +6,9 @@ Flutter Web Course Assignments
 * If we have only one expanded() inside a Row() or a Column(), it will occupy the whole Row() or the whole Column(). If we have more than one, then they will occupy the available space equally.
 * You can also specify how much space it should take compared to other Expanded() widgets present on the same Row() or Column(). To do that, we use the "flex" property. Which works like a fraction.
 
+## About the Center() Widget
+* The Center() Widget center its child inside the Center() Widget's parent. As an example: If we have something like: body -> center -> row. The Center() widget will center the Row() widget in respect to the "body" property.
+
 ## Problems when cloning a repo from GitHub and Android Studio complaining about the Dart SDK?
 * The Dart SDK is under the flutter folder, more specific the path is usually the following: flutter\bin\cache\dart-sdk
 * After setting the correct path described above, you should hit the button: "Get Depedencies" and everything should be ok.
