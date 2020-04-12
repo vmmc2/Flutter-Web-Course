@@ -1,0 +1,61 @@
+PARA FAZER O EDITOR NO MEU ASSEMBLER --> USE A CLASSE TEXTFIELD() CLASS
+
+(1) SafeArea
+    -> Serve para delimitar o espaco ocupado por widgets na tela do celular de forma adequada e segura. Utilizar o SafeArea eh muito
+       util porque as dimensoes e o formato da tela de celular mudam de aparelho para aparelho. Por causa disso, eh recomendado sempre dar
+       um Wrap em um widget usando o SafeArea() quando for necessario. [x]
+(2) Expanded
+    -> Como o nome do widget ja sugere, ele serve para expandir as dimensoes de um widget para que ele ocupe o maior espaco possivel que
+       seja fornecido a ele. Quando estamos trabalhando com widgets que sao inflexiveis e widgets que sao flexiveis, ele coloca no layout
+       primeiro os inflexiveis, e com o espaco restante, ele distribui os flexiveis de forma igualitaria. [x]
+(3) Wrap
+    -> Wrap serve para meio que aumentar o espaco de uma Row() por exemplo. No caso de a gente encher uma Row() e quiser colocar mais coisas
+       dentro dela, ele simplesmente aumenta a altura da Row() e comeca a colocar o resto dos widgets embaixo. Dando um fill mesmo. Da pra
+       aplicar com Columns() tbm. Da pra mudar a forma como o Wrap() vai dando o fill tbm.
+(4) AnimatedContainer
+    -> Serve para fazer animacoes implicitas.
+(17) ClipRRect
+     -> Widget que serve para mudar a borda do seu child widget. Pode ser bastante util para fins de estilizacao quando eu estiver fazendo
+        os meus apps.
+     -> Existe tbm: ClipOval, ClipPath e outros mais. Olhe na documentacao!
+(18) Hero
+     -> Animacao para mudar de tela.
+     -> Eh chamada de Hero() pq o widget meio que sai voando por cima da tela durante a transicao para ocupar a nova tela.
+     -> Aparentemente eh bem simples de usar. Da pra usar com Image() e Clip().
+(19) CustomPaint
+     -> Serve para criar UI's extremamente customizadas.
+     -> Eh baixo nivel. E complicado de usar.
+(20) ToolTip
+     -> Widget muito util quando estamos trabalhando com Icones/Botoes/Imagens.
+     -> Ele eh util porque quando a gente passa o mouse (ou o dedo) por cima, ele abre uma pequena caixa de dialogo/alerta explicando oq aquilo faz
+     -> Para usar o ToolTip() basta envolver o widget que vai receber a caixa de dialogo e em seguida usar o atributo "message:" de ToolTip() para 
+        dizer qual mensagem vc quer que o usuario receba quando passar o mouse/dedo por cima daquele botao/imagem/icone.
+     -> Da pra customizar o height e width do meu ToolTip() tbm
+     -> Alguns widgets ja vem com o atributo "tooltip:"
+(21) LayoutBuilder
+     -> Parece util para construir UIs. 
+     -> Melhor usar documentacao e exemplos para saber melhor oq isso faz.
+(23) Transform
+     -> MUITO UTIL PARA FAZER DESIGNS E UIS BONITAS E ELEGANTES
+     -> Em compensacao, eh bem complicado de usar. Tem que ver a documentacao com calma e procurar por exemplos na net.
+(25) Align
+     -> Serve para determinar a posicao de um child widget dentro do seu parent widget.
+     -> Tem que dar um wrap no child widget usando o Align() como widget mais externo.
+     -> Ai a gente seta o property "alignment:" do widget Align(). Da pra setar usando coordenadas cartesianas que variam de -1 a 1. Tanto no eixo vertical
+        como no eixo horizontal.
+(26) Positioned
+     -> Esse widget serve para o usuario ir posicionando os widgets dentro de um Stack() widget.
+     -> Importante ver a documentacao. Nao eh tao simples de usar como parece.
+(28) Dismissible
+     -> Pode ser util para fazer avisos de erro que sumam quando o usuario desliza sobre.
+(29) SizedBox
+     -> Serve para determinar de forma especifica e restrita o tamanho de um widget. No caso, vai determinar o tamanho do child widget, pois
+        SizedBox() funciona como um wrapper.
+     -> Se vc quer que o child widget pegue todo o espaco disponivel disposto pelo parent widget do SizedBox(), use: double.infinity nos
+        atributos "height" e "width".
+(31) Draggable
+     -> Esse widget pode ser util para fazer UIs diferenciadas que possuam elementos que possam ser arrastados pela tela do celular ou
+        com o mouse na tela do computador..
+     -> Aparentemente eh meio complicado de usar... Melhor dar uma olhada na documentacao e pesquisar por exemplos na net antes de mexer
+        com isso. Daria para fazer com que os registradores se mexessem na tela?
+
