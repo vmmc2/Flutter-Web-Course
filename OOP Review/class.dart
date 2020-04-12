@@ -8,3 +8,27 @@ class Car{
     print("Wheels start turning!");
   }
 };
+
+class Human{
+  //Properties/Members
+  double height;
+  int age = 0;
+  
+  //Constructor
+  Human({double myHeight}){
+    this.height = myHeight;
+  }
+  
+  //Methods
+  void talk(String whatToSay){
+    print(whatToSay);
+  }
+  
+}
+
+void main(){
+  Human Jen = Human(myHeight: 34.0);
+  print(Jen.height);
+  return 0;
+}
+
