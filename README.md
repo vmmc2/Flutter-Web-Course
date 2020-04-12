@@ -6,6 +6,9 @@ Flutter Web Course Assignments
 * Dart, as well as Haskell, has type inference. This means that when you declare a variable of type "var" making an assignment, the language has a way to discover which should be the type of this variable.
 * If you just create a variable using "var" and don't assign anything to it. Then, this variable will work as a "dynamic".
 
+## Working with too much data that is related but is stored in different data structures?
+* Then, it might be useful to create a class that will store all of this data that is related.
+
 ## What if I want to use a Image() Widget as a button?
 * Well, to do that we can just wrap this Image() Widget with a FlatButton() Widget or other type of button.
 * Remember that the FlatButton() Widget already comes with padding.
