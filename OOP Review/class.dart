@@ -23,7 +23,6 @@ class Human{
   void talk(String whatToSay){
     print(whatToSay);
   }
-  
 }
 
 void main(){
