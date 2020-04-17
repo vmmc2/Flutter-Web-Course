@@ -1,6 +1,10 @@
 # Flutter-Web-Course
 Flutter Web Course Assignments
 
+## How to add a background image to a container?
+* To do that, we must use the "decoration" property of the container. We assign to it a DecorationImage() widget.
+* Inside of it, we declare the image using the "image" property and in order to fill the hole space, in the "fit" property, we use "BoxFit.cover".
+
 ## Best practices about Data Types
 * Avoid using "var" and "dynamic" in your programs, unless you really need it for a reason.
 * Dart, as well as Haskell, has type inference. This means that when you declare a variable of type "var" making an assignment, the language has a way to discover which should be the type of this variable.
