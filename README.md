@@ -2,7 +2,7 @@
 Flutter Web Course Assignments
 
 ## How to add a background image to a container?
-* To do that, we must use the "decoration" property of the container. We assign to it a DecorationImage() widget.
+* To do that, we must use the "decoration" property of the container, we assign a BoxDecoration() widget. Inside of it, we have a "image" property. And we assign to it a DecorationImage() widget.
 * Inside of it, we declare the image using the "image" property and in order to fill the hole space, in the "fit" property, we use "BoxFit.cover".
 
 ## Best practices about Data Types
