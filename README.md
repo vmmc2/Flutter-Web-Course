@@ -1,6 +1,12 @@
 # Flutter-Web-Course
 Flutter Web Course Assignments
 
+## Is it possible to use colors that are not defined in the MaterialApp?
+* Yes, it is. But in order to do so, we must provide the HexNumber of the color that we want.
+* We can easy discover the HexNumber of a color using a tool called ColorZilla.
+* Generate the hexcode for a specific color. And use it inside the Color() widget that is assigned to a "color" property.
+* In the Color() widget, we put our hexcode, but we have to delete the "#" symbol and also we must put the string "0xFF" at the beggining. This string "0xFF" indicates the opacity level of the color that we are using.
+
 ## How we can define a Theme Style that can be used everywhere in our app?
 * To do that, we must use the "theme" property that is present in the MaterialApp() widget that we return as the first thing when we are running our app. The "theme" propert expects a widget called ThemeData() in which we can define a bunch of other properties that are going to define a pattern of how our app must be layed out when it comes to: fonts, color of cards, color os buttons, color of text and all kind of different stuff.
 * To know more about all these things, take a look at the documentation.
