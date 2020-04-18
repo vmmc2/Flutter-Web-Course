@@ -83,3 +83,28 @@ PARA FAZER O EDITOR NO MEU ASSEMBLER --> USE A CLASSE TEXTFIELD() CLASS
      -> Da para implementar um jogo da memoria com ele? Aparentemente sim..
 (44) IndexedStack
      -> Da para usar isso na transicao entre Registradores/Memoria/Cache...
+(53) ListTile
+     -> Eh o que eu vou usar para implementar cada um dos registradores.
+     -> Cada ListTile tem uma serie de properties muito grande. Eh bom verificar a documentacao para obter maiores informacoes.
+(54) DataTable
+     -> Vou usar para mostrar o status da memoria. Da pra usar na cache tbm provavelmente.
+     -> Importante ver a documentacao disso tbm. Tem muitas properties diferentes.
+(55) Slider, RangeSlider, CupertinoSlider
+     -> Serve para selecionar um valor especifico, ou um range de valores arrastando o dedo na tela.
+     -> Pode ser util para selecionarmos o tamanho do bloco da cache...
+(56) AlertDialog
+     -> Da pra mostrar isso quando o usuario clicar pra rodar a simulacao.
+     -> Tbm da pra usar quando o usuario for configurar o ISA simulator.
+(57) Draggable Scrollable Sheet
+     -> Pode ser util para usar no meu app. Tem que ver a documentacao com calma.
+(58) Color Filtered
+     -> Pode ser util para questoes de coloracao na minha UI.
+     -> Da para aplicar em varios widgets. Nao apenas em Image() widgets.
+(59) ToggleButtons
+     -> Vai ser util para quando o usuario estiver configurando o simulador.
+     -> Exemplo: Quais extensoes eu quero ter acesso? I,M,F,D,C,A,B,etc...
+(60) Drawer
+     -> Forma eficiente e elegante de navegar entre as tabs do meu app.
+     -> Procurar documentacao e exemplos.
+(61) ListWheelScrollView
+     -> Forma alternativa ao inves de usar o SReordable List View
