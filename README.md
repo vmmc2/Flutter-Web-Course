@@ -1,6 +1,10 @@
 # Flutter-Web-Course
 Flutter Web Course Assignments
 
+## How we can define a Theme Style that can be used everywhere in our app?
+* To do that, we must use the "theme" property that is present in the MaterialApp() widget that we return as the first thing when we are running our app. The "theme" propert expects a widget called ThemeData() in which we can define a bunch of other properties that are going to define a pattern of how our app must be layed out when it comes to: fonts, color of cards, color os buttons, color of text and all kind of different stuff.
+* To know more about all these things, take a look at the documentation.
+
 ## How to add a background image to a container?
 * To do that, we must use the "decoration" property of the container, we assign a BoxDecoration() widget. Inside of it, we have a "image" property. And we assign to it a DecorationImage() widget.
 * Inside of it, we declare the image using the "image" property and in order to fill the hole space, in the "fit" property, we use "BoxFit.cover".
