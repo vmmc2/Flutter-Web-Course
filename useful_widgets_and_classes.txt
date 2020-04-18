@@ -56,8 +56,7 @@ PARA FAZER O EDITOR NO MEU ASSEMBLER --> USE A CLASSE TEXTFIELD() CLASS
 (31) Draggable
      -> Esse widget pode ser util para fazer UIs diferenciadas que possuam elementos que possam ser arrastados pela tela do celular ou
         com o mouse na tela do computador..
-     -> Aparentemente eh meio complicado de usar... Melhor dar uma olhada na documentacao e pesquisar por exemplos na net antes de mexer
-        com isso. Daria para fazer com que os registradores se mexessem na tela?
+     -> Aparentemente eh meio complicado de usar... Melhor dar uma olhada na documentacao e pesquisar por exemplos na net antes de      mexer com isso. Daria para fazer com que os registradores se mexessem na tela?
         
 (37) AnimatedIcon
      -> Pode ser util para elaborar os icones que vao ficar no meu app/webapp.
@@ -70,3 +69,17 @@ PARA FAZER O EDITOR NO MEU ASSEMBLER --> USE A CLASSE TEXTFIELD() CLASS
      -> Com certeza vai ser util para montar o esqueleto do meu app...
 (41) RichText
      -> Pode ser util para colocar links dentro de textos no meu app.
+(42) Reorderable ListView
+     -> Vai ser muito util para mostrar os registradores...
+     -> Posicoes de memoria
+     -> Cache
+     -> Tem a funcionalidade de podermos reordernar os ListTiles dentro da ListView. Que nem o cara do Venus fez no dele.
+     -> Para usar o Reordable ListView tem que usar em conjunt com o ListTile.
+     -> Aparentemente nao eh muito simples usar ambos em conjunto. O ideal eh pesquisar mais na documentacao e por exemplos na                 internet.
+     -> Use o "header" property para indicar o titulo desse meu Reordable ListView.
+(43) AnimatedPositioned
+     -> Parece ser util... Mas nao agora pro meu projeto.
+     -> Ao que parece da pra usar ele em conjunto com o widget Draggable().
+     -> Da para implementar um jogo da memoria com ele? Aparentemente sim..
+(44) IndexedStack
+     -> Da para usar isso na transicao entre Registradores/Memoria/Cache...
