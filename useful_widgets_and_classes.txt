@@ -58,4 +58,15 @@ PARA FAZER O EDITOR NO MEU ASSEMBLER --> USE A CLASSE TEXTFIELD() CLASS
         com o mouse na tela do computador..
      -> Aparentemente eh meio complicado de usar... Melhor dar uma olhada na documentacao e pesquisar por exemplos na net antes de mexer
         com isso. Daria para fazer com que os registradores se mexessem na tela?
-
+        
+(37) AnimatedIcon
+     -> Pode ser util para elaborar os icones que vao ficar no meu app/webapp.
+(38) AspectRatio
+     -> Util para dizer como queremos que seja a proporcao entre o width e o height de um widget.
+     -> O ideal eh escrever essa razao em forma de fracao por questoes de legibilidade.
+(39) LimitedBox
+     -> Vai ser util para fazer nossa lista de registradores ser scrollable quando o app ficar pronto.
+(40) PlaceHolder
+     -> Com certeza vai ser util para montar o esqueleto do meu app...
+(41) RichText
+     -> Pode ser util para colocar links dentro de textos no meu app.
