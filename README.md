@@ -1,6 +1,11 @@
 # Flutter-Web-Course
 Flutter Web Course Assignments
 
+## About screens
+* It is a good practice to have a dart file for each screen that we plan to have in our app.
+* It is also a good practice to have a dart file to group different classes that we use in our project.
+* We do that because it makes our code more organized, readable and modularized.
+
 ## Is it possible to use colors that are not defined in the MaterialApp?
 * Yes, it is. But in order to do so, we must provide the HexNumber of the color that we want.
 * We can easy discover the HexNumber of a color using a tool called ColorZilla.
