@@ -1,6 +1,9 @@
 # Flutter-Web-Course
 Flutter Web Course Assignments
 
+## Nota Importante: Reutilizacao de Widgets
+* Eh importante a gente notar quando estamos codando um projeto, se os widgets que estamos utilizando serao reutilizados em outros lugares. Pq isso eh importante? Pq nesse caso, eh muito mais conveniente criar uma class que represente um widget (e essa class naturalmente vai herdar propriedades de um Stateless Widget ou de um Stateful Widget) e alem disso, devemos atribuir um construtor para essa class. Pq devemos atribuir um construtor para a classe? Pq as vezes queremos mudar um atributo mt especifico dessa classe/widget sem perder a funcionalidade/atributos que a classe tambem pode nos ofertar. Ou seja, fazendo isso, estamos aproveitando ao maximo a reusabilidade e o reaproveitamento de Widgets de forma que possamos desenvolver um codigo mais conciso e legivel.
+
 ## About Symmetric Layouts
 * When we are working with symmetric layouts. The best way to do it is using Row() and Column() widgets. And wrapping every widget that we are using inside an Expanded() widget. So we take all the space available equally.
 
