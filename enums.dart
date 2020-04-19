@@ -8,7 +8,7 @@ enum CarType{
 class Car{
   CarType carStyle;
   
-  Car({this.carStyle});
+  Car({@required this.carStyle});
 }
 
 void main(){
