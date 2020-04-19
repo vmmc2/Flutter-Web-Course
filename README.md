@@ -4,6 +4,28 @@ Flutter Web Course Assignments
 ## Nota Importante: Reutilizacao de Widgets
 * Eh importante a gente notar quando estamos codando um projeto, se os widgets que estamos utilizando serao reutilizados em outros lugares. Pq isso eh importante? Pq nesse caso, eh muito mais conveniente criar uma class que represente um widget (e essa class naturalmente vai herdar propriedades de um Stateless Widget ou de um Stateful Widget) e alem disso, devemos atribuir um construtor para essa class. Pq devemos atribuir um construtor para a classe? Pq as vezes queremos mudar um atributo mt especifico dessa classe/widget sem perder a funcionalidade/atributos que a classe tambem pode nos ofertar. Ou seja, fazendo isso, estamos aproveitando ao maximo a reusabilidade e o reaproveitamento de Widgets de forma que possamos desenvolver um codigo mais conciso e legivel.
 
+## If-Else versus Ternary Operator
+* In most of the cases, when we are writing code that needs to check for some conditionals, we have to write if-else statements. But the drawback is that writing these if-else statements make our code a lot more verbish than what we would like. So, an option to do it is to use a Ternary Operator instead. Because it is going to make our code a lot more easy to read and it will also make it a lot less verbish. 
+* In the example below, we have to different implementations that do the exactly same thing:
+
+```dart
+  void main(){
+    bool jackBauerIsAwesome = true;
+    
+    //(1) First Implementation
+    if(jackBauerIsAwesome == true){
+      print('That\'s great!');
+    }else{
+      print('Oh no!');
+    }
+    
+    //(2) Second Implementation
+    jackBauerIsAwesome == true ? print('That\'s great!') : print('Oh no!');
+    
+    return;
+  }
+```
+
 ## About using numbers to represent different states and the use of Enum
 * It is a common practice that when we are coding some kind of project, we use different numbers to represent a set of states and then we do a bunch of comments in our code to explain what each of these numbers represent. But that is not a good practice because it makes hard for other people to understand what we are trying to do.
 * A better solution to solve this type of situation is to use a programming concept called Enum. Using it makes possible for us to associate a number to a state. Is almost like we had a bool variable but instead of it having only two states(true or false) it has as many states as we like/need. The example below shows us a concrete example of its use:
@@ -20,9 +42,6 @@ Flutter Web Course Assignments
     return;
   }
 ```
-
-
-
 
 ## How to make buttons without using FlatButton() or RaisedButton() widget?
 * In the vast majority of the times, we will be wrapping the widgets that we want to make look like a button with a FlatButton() or a RaisedButton() widget. But sometimes, it is a bad idea to do this because these widgets actually change the layout of their child widget.
