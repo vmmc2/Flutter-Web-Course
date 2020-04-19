@@ -4,7 +4,7 @@ Flutter Web Course Assignments
 ## Nota Importante: Reutilizacao de Widgets
 * Eh importante a gente notar quando estamos codando um projeto, se os widgets que estamos utilizando serao reutilizados em outros lugares. Pq isso eh importante? Pq nesse caso, eh muito mais conveniente criar uma class que represente um widget (e essa class naturalmente vai herdar propriedades de um Stateless Widget ou de um Stateful Widget) e alem disso, devemos atribuir um construtor para essa class. Pq devemos atribuir um construtor para a classe? Pq as vezes queremos mudar um atributo mt especifico dessa classe/widget sem perder a funcionalidade/atributos que a classe tambem pode nos ofertar. Ou seja, fazendo isso, estamos aproveitando ao maximo a reusabilidade e o reaproveitamento de Widgets de forma que possamos desenvolver um codigo mais conciso e legivel.
 
-## About using numbers to represent different states and use of Enum
+## About using numbers to represent different states and the use of Enum
 * It is a common practice that when we are coding some kind of project, we use different numbers to represent a set of states and then we do a bunch of comments in our code to explain what each of these numbers represent. But that is not a good practice because it makes hard for other people to understand what we are trying to do.
 * A better solution to solve this type of situation is to use a programming concept called Enum. Using it makes possible for us to associate a number to a state. Is almost like we had a bool variable but instead of it having only two states(true or false) it has as many states as we like/need. The example below shows us a concrete example of its use:
 
