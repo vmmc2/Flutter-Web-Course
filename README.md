@@ -4,6 +4,10 @@ Flutter Web Course Assignments
 ## Nota Importante: Reutilizacao de Widgets
 * Eh importante a gente notar quando estamos codando um projeto, se os widgets que estamos utilizando serao reutilizados em outros lugares. Pq isso eh importante? Pq nesse caso, eh muito mais conveniente criar uma class que represente um widget (e essa class naturalmente vai herdar propriedades de um Stateless Widget ou de um Stateful Widget) e alem disso, devemos atribuir um construtor para essa class. Pq devemos atribuir um construtor para a classe? Pq as vezes queremos mudar um atributo mt especifico dessa classe/widget sem perder a funcionalidade/atributos que a classe tambem pode nos ofertar. Ou seja, fazendo isso, estamos aproveitando ao maximo a reusabilidade e o reaproveitamento de Widgets de forma que possamos desenvolver um codigo mais conciso e legivel.
 
+## How to make buttons without using FlatButton() or RaisedButton() widget?
+* In the vast majority of the times, we will be wrapping the widgets that we want to make look like a button with a FlatButton() or a RaisedButton() widget. But sometimes, it is a bad idea to do this because these widgets actually change the layout of their child widget.
+* So, what we actually want is to detect gesture. Or, in other words, to detect that the user has interact with a certain area of the screen. And the answer to the problem is GestureDetector() widget.
+
 ## About Symmetric Layouts
 * When we are working with symmetric layouts. The best way to do it is using Row() and Column() widgets. And wrapping every widget that we are using inside an Expanded() widget. So we take all the space available equally.
 
