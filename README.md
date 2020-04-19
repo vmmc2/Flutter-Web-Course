@@ -9,6 +9,7 @@ Flutter Web Course Assignments
 
 ## About the "final" and "const" keywords
 * When we use the "final" in the declaration of a variable, we are making it a immutable variable. That means that once we have assigned a value to this variable, we cannot reassign any other value to that same variable.
+* When we are working with Stateless Widgets we have to keep in mind that their state cannot be changed during the lifetime of our app. So it makes sense that all properties inside our Stateless Widgets should not be changed. So, in order to achieve this requirement, we must use "final variables" inside our Stateless Widgets.
 
 ## About screens
 * It is a good practice to have a dart file for each screen that we plan to have in our app.
