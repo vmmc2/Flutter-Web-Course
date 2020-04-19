@@ -11,11 +11,11 @@ Flutter Web Course Assignments
 ```dart
 
   enum EnumName {typeA, typeB, typeC}
-  enum CarType {SUV, Sport, Conversible}
+  enum CarType {SUV, sports, convertible, coupe}
   
   void main(){
     
-    CarType.Sport;
+    CarType.sports;
     
     return;
   }
