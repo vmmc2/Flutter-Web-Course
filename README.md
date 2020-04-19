@@ -7,6 +7,9 @@ Flutter Web Course Assignments
 ## About Symmetric Layouts
 * When we are working with symmetric layouts. The best way to do it is using Row() and Column() widgets. And wrapping every widget that we are using inside an Expanded() widget. So we take all the space available equally.
 
+## About the "final" and "const" keywords
+* When we use the "final" in the declaration of a variable, we are making it a immutable variable. That means that once we have assigned a value to this variable, we cannot reassign any other value to that same variable.
+
 ## About screens
 * It is a good practice to have a dart file for each screen that we plan to have in our app.
 * It is also a good practice to have a dart file to group different classes that we use in our project.
