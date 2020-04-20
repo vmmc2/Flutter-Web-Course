@@ -17,6 +17,11 @@ int calculator(int n1, int n2, Function calculation){
   return calculation(n1, n2);
 }
 
+/* Em Dart, da para declararmos funcoes (e toda a sua parte logica) e atribuirmos essas funcoes a uma variavel do tipo "Function" */
+Function calculator2 = (int a, int b, Function calculation){
+  return calculation(a, b);
+}
+
 
 int add(int n1, int n2){
   return n1 + n2;
