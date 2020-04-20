@@ -19,6 +19,8 @@ Flutter Web Course Assignments
     
     print(myCar.drive()); //agora sim eu to chamando a funcao armazenada dentro da variavel "Function drive". Se fosse o caso, eu teria 
     //que passar os parametros necessarios, respeitando a ordem deles e a assinatura da funcao original.
+    
+    myCar.drive = fastDrive; //da pra mudar uma variavel do tipo "Function" que ta dentro de um objeto tambem.
     return;
   }
   
