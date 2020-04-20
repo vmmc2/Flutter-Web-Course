@@ -4,8 +4,11 @@ Flutter Web Course Assignments
 ## Nota Importante: Reutilizacao de Widgets
 * Eh importante a gente notar quando estamos codando um projeto, se os widgets que estamos utilizando serao reutilizados em outros lugares. Pq isso eh importante? Pq nesse caso, eh muito mais conveniente criar uma class que represente um widget (e essa class naturalmente vai herdar propriedades de um Stateless Widget ou de um Stateful Widget) e alem disso, devemos atribuir um construtor para essa class. Pq devemos atribuir um construtor para a classe? Pq as vezes queremos mudar um atributo mt especifico dessa classe/widget sem perder a funcionalidade/atributos que a classe tambem pode nos ofertar. Ou seja, fazendo isso, estamos aproveitando ao maximo a reusabilidade e o reaproveitamento de Widgets de forma que possamos desenvolver um codigo mais conciso e legivel.
 
+## Need an "Initial Status" to be set to a specific Widget?
+* If that is the case, then we should consider creating a variable and initially assigning "null" to it, so we can use this keyword as its initial state.
+
 ## If-Else versus Ternary Operator
-* In most of the cases, when we are writing code that needs to check for some conditionals, we have to write if-else statements. But the drawback is that writing these if-else statements make our code a lot more verbish than what we would like. So, an option to do it is to use a Ternary Operator instead. Because it is going to make our code a lot more easy to read and it will also make it a lot less verbish. 
+* In most of the cases, when we are writing code that needs to check for some conditionals, we have to write if-else statements. But the drawback is that writing these if-else statements make our code a lot more verbish than what we would like. So, an option to do it, is to use a Ternary Operator instead. Because it is going to make our code a lot more easy to read and it will also make it a lot less verbish. 
 * In the example below, we have to different implementations that do the exactly same thing:
 
 ```dart
