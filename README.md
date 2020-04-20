@@ -7,6 +7,37 @@ Flutter Web Course Assignments
 ## Nota importante 2: Funcoes como Objetos de Primeira Ordem
 * Dart apresenta uma particularidade em relacao a outras linguagens de programacao. Essa particularidade eh que funcoes podem ser usadas como objetos de primeira ordem. Oq isso quer dizer?? Que as funcoes em Dart funcionam exatamente como qualquer outro tipo de objeto. Ou seja, podemos armazenar funcoes dentro de variaveis e alem disso podemos passar funcoes como parametros para outras funcoes. Tal vantagem de Dart, permite que tenhamos grande flexibilidade quando trabalhando com funcoes.
 * Em Dart, o tipo que representa funcoes eh o tipo: "Function".
+* Essa funcionalidade de Dart pode ser utilizada tanto fora como tambem dentro de uma Class.
+* Observe o codigo-exemplo a seguir:
+
+```dart
+  void main(){
+    Car myCar = Car(drive: slowDrive);
+    
+    print(myCar.drive); //se eu fizer isso, eu nao vou ta chamando a funcao em si. Vou apenas ta printando o valor dessa funcao
+    //ou seja, ou vou ta apenas mostrando qual a funcao que ta guardada dentro dessa variavel do tipo "Function".
+    
+    print(myCar.drive()); //agora sim eu to chamando a funcao armazenada dentro da variavel "Function drive". Se fosse o caso, eu teria 
+    //que passar os parametros necessarios, respeitando a ordem deles e a assinatura da funcao original.
+    return;
+  }
+  
+  class Car{
+    Function drive; //variavel que pode armazenar uma funcao dentro de si.
+    
+    Car({this.drive}); //Constructor da class Car que utiliza "named parameters"
+  }
+
+  void slowDrive(){
+    print("driving slowly");
+    return;
+  }
+  
+  void fastDrive(){
+    print("driving really fast");
+    return;
+  }
+```
 
 ## Need an "Initial Status" to be set to a specific Widget?
 * If that is the case, then we should consider creating a variable and initially assigning "null" to it, so we can use this keyword as its initial state.
