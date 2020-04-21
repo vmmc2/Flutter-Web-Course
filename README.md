@@ -26,6 +26,25 @@ Flutter Web Course Assignments
   )
 
 ```
+* A segunda forma de fazer uma navegacao com o uso de routes em Dart eh por meio do uso das chamadas NamedRoutes.
+* Para fazer o uso de NamedRoutes a gente tem que definir um Map que vai associar cada uma das possiveis paginas a uma funcao responsavel por realizar a "chamada" dessa pagina para que ela seja carregada na tela.
+* Para fazer isso, a gente usar duas propriedades de um widget: "initialRoute" e "routes".
+* A propriedade "initialRoute" vai definir qual eh a pagina/tela/screen inicial que eu devo carregar assim que eu iniciar o meu aplicativo.
+* IMPORTANTE: Eu nao posso definir ao mesmo tempo: "initialRoute" e "home" porque isso causa um conflito em relacao a qual pagina inicial eu vou usar e por causa disso o app vai simplesmente crashar.
+* Observe o exemplo a seguir usando o conceito de NamedRoutes: 
+
+```dart
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Screen0(),
+        '/first': (context) => Screen1(),
+        '/second': (context) => Screen2(),
+      },
+    );
+  }
+```
 
 
 ## Nota Importante 3: Customizacao de Widgets
