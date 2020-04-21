@@ -45,8 +45,8 @@ Flutter Web Course Assignments
     );
   }
 ```
-* Entretanto, as coisas nao para por ai, dentro de "screen0.dart" eu tenho que fazer a funcionalidade da mudanca de telas..
-* A gente ainda vai usar o navigator, mas de forma diferenciada, de tal maneira que possamos usufruir dos beneficios das NamedRoutes. Observe:
+* Entretanto, as coisas nao param por ai, dentro de "screen0.dart" eu tenho que fazer a funcionalidade da mudanca de telas.
+* A gente ainda vai usar o navigator, mas de forma diferenciada, de tal maneira que possamos usufruir dos beneficios de NamedRoutes. Observe:
 
 ```dart
   //Indo para a tela 1
@@ -67,6 +67,7 @@ Flutter Web Course Assignments
               },
             ),
 ```
+* Importante ter em mente que podemos usar ambos os tipos de navegacao simultaneamente. Assim podemos, por exemplo, navegar diretamente da "screen1.dart" para a "screen2.dart" sem ter que passar pela "screen0.dart".
 
 
 ## Nota Importante 3: Customizacao de Widgets
