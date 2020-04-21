@@ -4,7 +4,11 @@ Flutter Web Course Assignments
 ## Nota Importante: Reutilizacao de Widgets
 * Eh importante a gente notar quando estamos codando um projeto, se os widgets que estamos utilizando serao reutilizados em outros lugares. Pq isso eh importante? Pq nesse caso, eh muito mais conveniente criar uma class que represente um widget (e essa class naturalmente vai herdar propriedades de um Stateless Widget ou de um Stateful Widget) e alem disso, devemos atribuir um construtor para essa class. Pq devemos atribuir um construtor para a classe? Pq as vezes queremos mudar um atributo mt especifico dessa classe/widget sem perder a funcionalidade/atributos que a classe tambem pode nos ofertar. Ou seja, fazendo isso, estamos aproveitando ao maximo a reusabilidade e o reaproveitamento de Widgets de forma que possamos desenvolver um codigo mais conciso e legivel.
 
-## Nota importante 2: Funcoes como Objetos de Primeira Ordem
+## Nota Importante 2: Customizacao de Widgets
+* Se eu nao estiver satisfeito com as propriedades que eu posso alterar normalmente em um widget, eu posso apelar para a classe ThemeData() para ter uma quantidade maior de possibilidades no que diz respeito a customizacao.
+* Da ate pra fazer um Widget do zero (se eu quiser apelar mesmo).
+
+## Nota Importante 3: Funcoes como Objetos de Primeira Ordem
 * Dart apresenta uma particularidade em relacao a outras linguagens de programacao. Essa particularidade eh que funcoes podem ser usadas como objetos de primeira ordem. Oq isso quer dizer?? Que as funcoes em Dart funcionam exatamente como qualquer outro tipo de objeto. Ou seja, podemos armazenar funcoes dentro de variaveis e alem disso podemos passar funcoes como parametros para outras funcoes. Tal vantagem de Dart, permite que tenhamos grande flexibilidade quando trabalhando com funcoes.
 * Em Dart, o tipo que representa funcoes eh o tipo: "Function".
 * Essa funcionalidade de Dart pode ser utilizada tanto fora como tambem dentro de uma Class.
