@@ -4,11 +4,35 @@ Flutter Web Course Assignments
 ## Nota Importante: Reutilizacao de Widgets
 * Eh importante a gente notar quando estamos codando um projeto, se os widgets que estamos utilizando serao reutilizados em outros lugares. Pq isso eh importante? Pq nesse caso, eh muito mais conveniente criar uma class que represente um widget (e essa class naturalmente vai herdar propriedades de um Stateless Widget ou de um Stateful Widget) e alem disso, devemos atribuir um construtor para essa class. Pq devemos atribuir um construtor para a classe? Pq as vezes queremos mudar um atributo mt especifico dessa classe/widget sem perder a funcionalidade/atributos que a classe tambem pode nos ofertar. Ou seja, fazendo isso, estamos aproveitando ao maximo a reusabilidade e o reaproveitamento de Widgets de forma que possamos desenvolver um codigo mais conciso e legivel.
 
-## Nota Importante 2: Customizacao de Widgets
+## Nota Importante 2: Criacao de Apps com Multiplas Paginas, Navegacao e Routing
+* Falou em Routes eh a mesma coisa de estarmos falando sobre screens(telas) e paginas.
+* Em Flutter, o jeito de navegar de uma pagina/screen para outra dentro do nosso app eh por meio do uso de "routes".
+* O "context" que a gente usa direto em Flutter eh simplesmente uma maneira de indicar onde o Widget atual se encontra dentro da widget tree. Serve para nos orientarmos no app, para dizer onde estamos atualmente e para onde queremos ir.
+* Existem algumas formas basicas de navegar entre screens/telas/paginas em Dart. A mais comum delas eh usando os conceitos de push/pop.
+* Esse primeiro tipo de navegacao funciona da seguinte forma: Suponha que em nosso App nos tenhamos duas screens: "screen1.dart" e "screen2.dart". Nos comecamos na "screen1.dart" e podemos querer ir para a "screen2.dart" e tambem podemos querer voltar. A gente faz isso dando um push() da "screen2.dart" em cima da "screen1.dart" e na hora de voltar, a gente apenas da um pop(). Para fazer isso, a gente precisa de um RaisedButton(), FlatButton() ou GestureDetector() e dentro da property onPressed nos vamos fazer a mudanca. Observe:
+
+```dart
+
+  ... //To em Screen1.dart
+  ...
+  child: RaisedButton(
+    color: Colors.blue,
+    child: Text('Go Forward to Screen2'),
+    onPressed: (){
+      Navigator.push(context, MaterialPageRoute(builder: (context){
+        return Screen2();
+     } ))
+    }
+  )
+
+```
+
+
+## Nota Importante 3: Customizacao de Widgets
 * Se eu nao estiver satisfeito com as propriedades que eu posso alterar normalmente em um widget, eu posso apelar para a classe ThemeData() para ter uma quantidade maior de possibilidades no que diz respeito a customizacao.
 * Da ate pra fazer um Widget do zero (se eu quiser apelar mesmo).
 
-## Nota Importante 3: Funcoes como Objetos de Primeira Ordem
+## Nota Importante 4: Funcoes como Objetos de Primeira Ordem
 * Dart apresenta uma particularidade em relacao a outras linguagens de programacao. Essa particularidade eh que funcoes podem ser usadas como objetos de primeira ordem. Oq isso quer dizer?? Que as funcoes em Dart funcionam exatamente como qualquer outro tipo de objeto. Ou seja, podemos armazenar funcoes dentro de variaveis e alem disso podemos passar funcoes como parametros para outras funcoes. Tal vantagem de Dart, permite que tenhamos grande flexibilidade quando trabalhando com funcoes.
 * Em Dart, o tipo que representa funcoes eh o tipo: "Function".
 * Essa funcionalidade de Dart pode ser utilizada tanto fora como tambem dentro de uma Class.
