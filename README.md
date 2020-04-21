@@ -31,7 +31,7 @@ Flutter Web Course Assignments
 * Para fazer isso, a gente usar duas propriedades de um widget: "initialRoute" e "routes".
 * A propriedade "initialRoute" vai definir qual eh a pagina/tela/screen inicial que eu devo carregar assim que eu iniciar o meu aplicativo.
 * IMPORTANTE: Eu nao posso definir ao mesmo tempo: "initialRoute" e "home" porque isso causa um conflito em relacao a qual pagina inicial eu vou usar e por causa disso o app vai simplesmente crashar.
-* Observe o exemplo a seguir usando o conceito de NamedRoutes: 
+* Observe o exemplo a seguir usando o conceito de NamedRoutes. Tem que declarar esse Map na tela inicial (No caso em: "main.dart") : 
 
 ```dart
   Widget build(BuildContext context) {
@@ -44,6 +44,28 @@ Flutter Web Course Assignments
       },
     );
   }
+```
+* Entretanto, as coisas nao para por ai, dentro de "screen0.dart" eu tenho que fazer a funcionalidade da mudanca de telas..
+* A gente ainda vai usar o navigator, mas de forma diferenciada, de tal maneira que possamos usufruir dos beneficios das NamedRoutes. Observe:
+
+```dart
+  //Indo para a tela 1
+  RaisedButton(
+              color: Colors.red,
+              child: Text('Go To Screen 1'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/first'); //Faco uso do valor que a chave '/first' contem
+              },
+            ),
+
+  //Indo para a tela 2
+  RaisedButton(
+              color: Colors.blue,
+              child: Text('Go To Screen 2'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/second'); //Faco uso do valor que a chave '/second' contem
+              },
+            ),
 ```
 
 
