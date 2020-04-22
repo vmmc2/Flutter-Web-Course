@@ -111,6 +111,9 @@ Flutter Web Course Assignments
   }
 ```
 
+## Nota Importante 5: Sobre revisoes
+* O modulo 12 do Curso de Flutter (BMI Calculator App) eh muitooo bom para revisar conceitos-chave de Dart/Flutter.
+
 ## Need an "Initial Status" to be set to a specific Widget?
 * If that is the case, then we should consider creating a variable and initially assigning "null" to it, so we can use this keyword as its initial state.
 
