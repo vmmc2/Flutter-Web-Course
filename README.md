@@ -31,7 +31,7 @@ Flutter Web Course Assignments
 * Para fazer isso, a gente usar duas propriedades de um widget: "initialRoute" e "routes".
 * A propriedade "initialRoute" vai definir qual eh a pagina/tela/screen inicial que eu devo carregar assim que eu iniciar o meu aplicativo.
 * IMPORTANTE: Eu nao posso definir ao mesmo tempo: "initialRoute" e "home" porque isso causa um conflito em relacao a qual pagina inicial eu vou usar e por causa disso o app vai simplesmente crashar.
-* Observe o exemplo a seguir usando o conceito de NamedRoutes. Tem que declarar esse Map na tela inicial (No caso em: "main.dart") : 
+* Observe o exemplo a seguir usando o conceito de NamedRoutes. Tem que declarar esse Map na tela inicial dentro de Material App() (No caso em: "main.dart") : 
 
 ```dart
   Widget build(BuildContext context) {
