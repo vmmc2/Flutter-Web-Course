@@ -115,7 +115,7 @@ Flutter Web Course Assignments
 * O modulo 12 do Curso de Flutter (BMI Calculator App) eh muitooo bom para revisar conceitos-chave de Dart/Flutter.
 
 ## A Quick Intro About The Keywords: "Async" and "Await":
-* These keywords are used when we are working with asyncronous programming. To be more specific, this means that we dealing with time-consuming tasks such as: grab data from the internet, get the current position of our device on Earth and other stuff like that. These type of actions demand a lot of time and by using these keywords specified above we make sure that these requests are running in the background instead of the foreground. We do this because if these tasks were running in the foreground then it would be possible that our application just freeze.
+* These keywords are used when we are working with asyncronous programming. To be more specific, this means that we dealing with time-consuming tasks such as: grab data from the internet, get the current position of our device on Earth and other stuff like that. These types of actions demand a lot of time and by using these keywords specified above we make sure that these requests are running in the background instead of the foreground. We do this because if these tasks were running in the foreground then it would be possible that our application just got frozen.
 
 ## Need an "Initial Status" to be set to a specific Widget?
 * If that is the case, then we should consider creating a variable and initially assigning "null" to it, so we can use this keyword as its initial state.
