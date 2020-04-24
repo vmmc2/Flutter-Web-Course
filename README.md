@@ -124,6 +124,22 @@ Flutter Web Course Assignments
 ## A Quick Intro About The Keywords: "Async" and "Await":
 * These keywords are used when we are working with asyncronous programming. To be more specific, this means that we dealing with time-consuming tasks such as: grab data from the internet, get the current position of our device on Earth and other stuff like that. These types of actions demand a lot of time and by using these keywords specified above we make sure that these requests are running in the background instead of the foreground. We do this because if these tasks were running in the foreground then it would be possible that our application just got frozen. 
 
+## Try and Catch (Exception/Error Handling)
+* This is used to catch/find runtime errors that might happen in our code during its execution.
+```dart
+try{
+  // Do something that might fail.
+}catch(e){
+ // Catch any of the exceptions that might have occured.
+}
+```
+
+## Null-Aware Operator
+* This operator is used to check if a variable has a value of "null" and if that is the case, it automatically assigns a default value to the variable.
+```dart
+  myVariable ?? 30;
+```
+
 ## Need an "Initial Status" to be set to a specific Widget?
 * If that is the case, then we should consider creating a variable and initially assigning "null" to it, so we can use this keyword as its initial state.
 
