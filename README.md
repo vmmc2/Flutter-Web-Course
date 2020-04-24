@@ -114,8 +114,15 @@ Flutter Web Course Assignments
 ## Nota Importante 5: Sobre revisoes
 * O modulo 12 do Curso de Flutter (BMI Calculator App) eh muitooo bom para revisar conceitos-chave de Dart/Flutter.
 
+## Nota Importante 6: Ciclo de Vida de Stateless e Stateful Widgets
+* Quando estamos lidando com Stateless Widgets, devemos nos lembrar de que eles sao imutaveis. Isso quer dizer que toda vez que queremos altera-los, devemos destruir o Stateless Widget para entao cria-lo novamente do zero. Toda vez que a gente cria um Stateless Widget, o que ta de fato acontecendo por de baixo dos panos eh que estamos chamando o metodo "build()" do Stateless Widget.
+* Stateful Widgets nao funcionam dessa maneira. Eles possuem, de fato, um ciclo de vida. Um Stateful Widget possui outros metodos que sao utilizados para que a gente tenha informacao sobre o ciclo de vida do Widget. Sao eles: initState(), build() e deactivate().
+1. initState() -> Esse metodo eh chamado assim que o Widget eh inserido dentro da Widget Tree. Se a gente quer que algo aconteca assim que o nosso Widget eh criado, a gente coloca o que deve acontecer dentro desse metodo.
+2. build() -> Esse metodo eh chamado assim que o Widget eh construido na tela do nosso aparelho. Se a gente quer que algo aconteca toda vez que o Widget eh reconstruido, a gente coloca ele a funcionalidade aqui dentro.
+3. deactivate() -> Esse metodo eh chamado quando o Widget em questao eh destruido. E ele eh destruido assim que o Widget sai da tela. Se a gente quer que algo aconteca quando o nosso Widget em questao for destruido, colocamos a funcionalidade dentro desse metodo.
+
 ## A Quick Intro About The Keywords: "Async" and "Await":
-* These keywords are used when we are working with asyncronous programming. To be more specific, this means that we dealing with time-consuming tasks such as: grab data from the internet, get the current position of our device on Earth and other stuff like that. These types of actions demand a lot of time and by using these keywords specified above we make sure that these requests are running in the background instead of the foreground. We do this because if these tasks were running in the foreground then it would be possible that our application just got frozen.
+* These keywords are used when we are working with asyncronous programming. To be more specific, this means that we dealing with time-consuming tasks such as: grab data from the internet, get the current position of our device on Earth and other stuff like that. These types of actions demand a lot of time and by using these keywords specified above we make sure that these requests are running in the background instead of the foreground. We do this because if these tasks were running in the foreground then it would be possible that our application just got frozen. 
 
 ## Need an "Initial Status" to be set to a specific Widget?
 * If that is the case, then we should consider creating a variable and initially assigning "null" to it, so we can use this keyword as its initial state.
