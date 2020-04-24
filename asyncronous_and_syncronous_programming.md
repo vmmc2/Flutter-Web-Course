@@ -1,4 +1,4 @@
-# ABOUT SYNCRONOUS AND ASYNCRONOUS PROGRAMMING
+# ABOUT SYNCHRONOUS AND ASYNCHRONOUS PROGRAMMING
 
 ## Consider the following example of code written in Dart below...
 ```dart
@@ -27,5 +27,5 @@ void aFunction(){
   return;
 }
 ```
-* First of all, note that now we are calling a function named "asyncLoad", which means that this function will be executed in an asyncronous way. But what does that really mean? It means that we execute the Step 1, then we start execute the Step 2 but we do not have to wait for the Step 2 to be finished. While, we are loading our image from the NASA database we can already proceed to our next step, which is Step 3 and we can execute it. So, in other words, what we do is call our print statement, printing to the console the string "Hello Jupiter".
+* First of all, note that now we are calling a function named "asyncLoad", which means that this function will be executed in an asynchronous way. But what does that really mean? It means that we execute the Step 1, then we start execute the Step 2 but we do not have to wait for the Step 2 to be finished. While, we are loading our image from the NASA database we can already proceed to our next step, which is Step 3 and we can execute it. So, in other words, what we do is call our print statement, printing to the console the string "Hello Jupiter".
 
