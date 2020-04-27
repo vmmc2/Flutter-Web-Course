@@ -118,7 +118,7 @@ Flutter Web Course Assignments
 * Quando estamos lidando com Stateless Widgets, devemos nos lembrar de que eles sao imutaveis. Isso quer dizer que toda vez que queremos altera-los, devemos destruir o Stateless Widget para entao cria-lo novamente do zero. Toda vez que a gente cria um Stateless Widget, o que ta de fato acontecendo por de baixo dos panos eh que estamos chamando o metodo "build()" do Stateless Widget.
 * Stateful Widgets nao funcionam dessa maneira. Eles possuem, de fato, um ciclo de vida. Um Stateful Widget possui outros metodos que sao utilizados para que a gente tenha informacao sobre o ciclo de vida do Widget. Sao eles: initState(), build() e deactivate().
 1. initState() -> Esse metodo eh chamado assim que o Widget eh inserido dentro da Widget Tree. Se a gente quer que algo aconteca assim que o nosso Widget eh criado, a gente coloca o que deve acontecer dentro desse metodo.
-2. build() -> Esse metodo eh chamado assim que o Widget eh construido na tela do nosso aparelho. Se a gente quer que algo aconteca toda vez que o Widget eh reconstruido, a gente coloca ele a funcionalidade aqui dentro.
+2. build() -> Esse metodo eh chamado assim que o Widget eh construido na tela do nosso aparelho. Se a gente quer que algo aconteca toda vez que o Widget eh reconstruido, a gente coloca essa funcionalidade aqui dentro.
 3. deactivate() -> Esse metodo eh chamado quando o Widget em questao eh destruido. E ele eh destruido assim que o Widget sai da tela. Se a gente quer que algo aconteca quando o nosso Widget em questao for destruido, colocamos a funcionalidade dentro desse metodo.
 
 ## A Quick Intro About The Keywords: "Async" and "Await":
