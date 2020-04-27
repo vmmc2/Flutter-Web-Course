@@ -111,10 +111,34 @@ Flutter Web Course Assignments
   }
 ```
 
-## Nota Importante 5: Sobre revisoes
-* O modulo 12 do Curso de Flutter (BMI Calculator App) eh muitooo bom para revisar conceitos-chave de Dart/Flutter.
+## Nota Importante 5: Sobre JSON e APIs
+* Quando estamos trabalhando com JSON (JavaScript Object Notation) temos que ter em mente que isso eh apenas uma forma de conseguir dados da internet atraves de uma API. Isso eh apenas uma forma de realizar tal coisa. A outra possivel forma eh atraves do uso do XML.
+* Quando estamos trabalhando com JSON, ao receber o pack de dados da internet, devemos decodifica-lo e para isso, usamos uma library especifica de Dart. Nao somente declaramos que estamos usando tal library como tambem devemos utilizar um metodo chamado "JSONDecode" que eh responsavel por decodificar as informacoes, que estao no formato JSON, para um formato que possamos de fato utilizar em nosso programa.
+```dart
+import 'dart:convert';
 
-## Nota Importante 6: Ciclo de Vida de Stateless e Stateful Widgets
+void main(){
+  http.Response response = http.get("um_link_qualquer_de_uma_URL");
+  String data = response.body;
+  
+  //Isso aqui abaixo a gente faz quando temos varios maps aninhados dentro do JSON.
+  var longitude = jsonDecode(data)['coord']['lon'];
+  print(longitude);
+  
+  //Entretanto, existe o caso em que nao temos apenas maps aninhados dentro do JSON mas tambem temos lists dentro dos maps. Nesse caso,
+  //procedemos da seguinte maneira.
+  var weatherDescription = jsonDecode(data)['weather'][0]['description'];
+  print(weatherDescription);
+  //Nesse exemplo acima, dentro da chave 'weather', a gente tinha uma list e dentro dessa list a gente tinha um map (que era o primeiro elemento dessa list) com varias chaves.
+  
+  return;
+}
+```
+
+## Nota Importante 6: Sobre revisoes
+* Os modulos 12 (BMI Calculator App) e 13 (Clima App) do Curso de Flutter sao muito bons para revisar conceitos-chave de Dart/Flutter.
+
+## Nota Importante 7: Ciclo de Vida de Stateless e Stateful Widgets
 * Quando estamos lidando com Stateless Widgets, devemos nos lembrar de que eles sao imutaveis. Isso quer dizer que toda vez que queremos altera-los, devemos destruir o Stateless Widget para entao cria-lo novamente do zero. Toda vez que a gente cria um Stateless Widget, o que ta de fato acontecendo por de baixo dos panos eh que estamos chamando o metodo "build()" do Stateless Widget.
 * Stateful Widgets nao funcionam dessa maneira. Eles possuem, de fato, um ciclo de vida. Um Stateful Widget possui outros metodos que sao utilizados para que a gente tenha informacao sobre o ciclo de vida do Widget. Sao eles: initState(), build() e deactivate().
 1. initState() -> Esse metodo eh chamado assim que o Widget eh inserido dentro da Widget Tree. Se a gente quer que algo aconteca assim que o nosso Widget eh criado, a gente coloca o que deve acontecer dentro desse metodo.
