@@ -114,6 +114,7 @@ Flutter Web Course Assignments
 ## Nota Importante 5: Sobre JSON e APIs
 * Quando estamos trabalhando com JSON (JavaScript Object Notation) temos que ter em mente que isso eh apenas uma forma de conseguir dados da internet atraves de uma API. Isso eh apenas uma forma de realizar tal coisa. A outra possivel forma eh atraves do uso do XML.
 * Quando estamos trabalhando com JSON, ao receber o pack de dados da internet, devemos decodifica-lo e para isso, usamos uma library especifica de Dart. Nao somente declaramos que estamos usando tal library como tambem devemos utilizar um metodo chamado "JSONDecode" que eh responsavel por decodificar as informacoes, que estao no formato JSON, para um formato que possamos de fato utilizar em nosso programa.
+* Muitas vezes quando estamos tentando localizar uma chave especifica dentro do JSON eh muito dificil encontrar o seu path. Para isso, uma boa alternativa eh utilizar uma extensao do chrome chamada "JSON Viewer Awesome" na qual, dada um arquivo JSON, eh possivel visualizar o arquivo de forma mais clara/concisa e tambem eh possivel verificar o path para aquela chave, selecionando a chave no arquivo JSON e clicando em "get path".
 ```dart
 import 'dart:convert';
 
