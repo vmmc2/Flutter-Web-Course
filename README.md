@@ -14,7 +14,7 @@ Flutter Web Course Assignments
   }
 }
 ```
-* Ja o segundo caso com Stateful Widgets eh mais complicado. Vejamos porque...
+* Ja o segundo caso com Stateful Widgets eh mais complicado. De fato, o processo se torna mais complicado porque quando estamos trabalhando com Stateful Widgets, ao cria-los, a gente ta basicamente criando duas classes. Vamos supor que a gente queira criar um Stateful Widget com o nome de "Example". Quando ele eh de fato criado, criam-se dois objetos: O primeiro eh o Example Object e o segundo eh o Example State Object. Ou seja, o stateful widget em si fica separado do seu object. Outro ponto importante eh que os widgets filhos do nosso widget criado vivem dentro do state object. O construtor e os dados/variaveis ficam dentro do Stateful Widget.. Como podemos entao linkar essa parte visual com o conteudo??
 
 ## Nota Importante 2: Reutilizacao de Widgets
 * Eh importante a gente notar quando estamos codando um projeto, se os widgets que estamos utilizando serao reutilizados em outros lugares. Pq isso eh importante? Pq nesse caso, eh muito mais conveniente criar uma class que represente um widget (e essa class naturalmente vai herdar propriedades de um Stateless Widget ou de um Stateful Widget) e alem disso, devemos atribuir um construtor para essa class. Pq devemos atribuir um construtor para a classe? Pq as vezes queremos mudar um atributo mt especifico dessa classe/widget sem perder a funcionalidade/atributos que a classe tambem pode nos ofertar. Ou seja, fazendo isso, estamos aproveitando ao maximo a reusabilidade e o reaproveitamento de Widgets de forma que possamos desenvolver um codigo mais conciso e legivel.
