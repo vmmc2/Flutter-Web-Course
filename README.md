@@ -1,10 +1,25 @@
 # Flutter-Web-Course
 Flutter Web Course Assignments
 
-## Nota Importante: Reutilizacao de Widgets
+## Nota Importante 1: Sobre a passagem de dados entre telas/screens diferentes
+* A primeira coisa que devemos ter em mente ao fazer essa transferencia de dados entre telas/screens eh que essas telas/screens nada mais sao do que widgets. Entao, a gente ta simplesmente passando dados entre widgets diferentes que estao localizados em arquivos diferentes mas dentro de um mesmo projeto.
+* O primeiro caso que devemos levar em consideracao eh aquele no qual desejamos passar dados para um Stateless Widget. A forma mais simples de fazer isso eh criar uma variavel dentro desse Stateless Widget do mesmo tipo daquela que pretendemos passar e declarar um construtor para esse widget, de forma que possamos de fato passar tal dado. Observe o exemplo a seguir:
+```dart
+  class Ex extends StatelessWidget {
+  final String dado; // Nesse caso em particular, estamos querendo passar um dado na forma de uma string para esse widget. Para isso declaramos uma string dentro dessa classe/widget e declaramos o seu construtor.
+  Ex({this.dado});
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
+  }
+}
+```
+* Ja o segundo caso com Stateful Widgets eh mais complicado. Vejamos porque...
+
+## Nota Importante 2: Reutilizacao de Widgets
 * Eh importante a gente notar quando estamos codando um projeto, se os widgets que estamos utilizando serao reutilizados em outros lugares. Pq isso eh importante? Pq nesse caso, eh muito mais conveniente criar uma class que represente um widget (e essa class naturalmente vai herdar propriedades de um Stateless Widget ou de um Stateful Widget) e alem disso, devemos atribuir um construtor para essa class. Pq devemos atribuir um construtor para a classe? Pq as vezes queremos mudar um atributo mt especifico dessa classe/widget sem perder a funcionalidade/atributos que a classe tambem pode nos ofertar. Ou seja, fazendo isso, estamos aproveitando ao maximo a reusabilidade e o reaproveitamento de Widgets de forma que possamos desenvolver um codigo mais conciso e legivel.
 
-## Nota Importante 2: Criacao de Apps com Multiplas Paginas, Navegacao e Routing
+## Nota Importante 3: Criacao de Apps com Multiplas Paginas, Navegacao e Routing
 * Falou em Routes eh a mesma coisa de estarmos falando sobre screens(telas) e paginas.
 * Em Flutter, o jeito de navegar de uma pagina/screen para outra dentro do nosso app eh por meio do uso de "routes".
 * O "context" que a gente usa direto em Flutter eh simplesmente uma maneira de indicar onde o Widget atual se encontra dentro da widget tree. Serve para nos orientarmos no app, para dizer onde estamos atualmente e para onde queremos ir.
@@ -70,11 +85,11 @@ Flutter Web Course Assignments
 * Importante ter em mente que podemos usar ambos os tipos de navegacao simultaneamente. Assim podemos, por exemplo, navegar diretamente da "screen1.dart" para a "screen2.dart" sem ter que passar pela "screen0.dart".
 
 
-## Nota Importante 3: Customizacao de Widgets
+## Nota Importante 4: Customizacao de Widgets
 * Se eu nao estiver satisfeito com as propriedades que eu posso alterar normalmente em um widget, eu posso apelar para a classe ThemeData() para ter uma quantidade maior de possibilidades no que diz respeito a customizacao.
 * Da ate pra fazer um Widget do zero (se eu quiser apelar mesmo).
 
-## Nota Importante 4: Funcoes como Objetos de Primeira Ordem
+## Nota Importante 5: Funcoes como Objetos de Primeira Ordem
 * Dart apresenta uma particularidade em relacao a outras linguagens de programacao. Essa particularidade eh que funcoes podem ser usadas como objetos de primeira ordem. Oq isso quer dizer?? Que as funcoes em Dart funcionam exatamente como qualquer outro tipo de objeto. Ou seja, podemos armazenar funcoes dentro de variaveis e alem disso podemos passar funcoes como parametros para outras funcoes. Tal vantagem de Dart, permite que tenhamos grande flexibilidade quando trabalhando com funcoes.
 * Em Dart, o tipo que representa funcoes eh o tipo: "Function".
 * Essa funcionalidade de Dart pode ser utilizada tanto fora como tambem dentro de uma Class.
@@ -111,7 +126,7 @@ Flutter Web Course Assignments
   }
 ```
 
-## Nota Importante 5: Sobre JSON e APIs
+## Nota Importante 6: Sobre JSON e APIs
 * Quando estamos trabalhando com JSON (JavaScript Object Notation) temos que ter em mente que isso eh apenas uma forma de conseguir dados da internet atraves de uma API. Isso eh apenas uma forma de realizar tal coisa. A outra possivel forma eh atraves do uso do XML.
 * Quando estamos trabalhando com JSON, ao receber o pack de dados da internet, devemos decodifica-lo e para isso, usamos uma library especifica de Dart. Nao somente declaramos que estamos usando tal library como tambem devemos utilizar um metodo chamado "JSONDecode" que eh responsavel por decodificar as informacoes, que estao no formato JSON, para um formato que possamos de fato utilizar em nosso programa.
 * Muitas vezes quando estamos tentando localizar uma chave especifica dentro do JSON eh muito dificil encontrar o seu path. Para contornar essa situacao, uma boa alternativa eh utilizar uma extensao do chrome chamada "JSON Viewer Awesome" na qual, dado um arquivo JSON, eh possivel visualizar o arquivo de forma mais clara/concisa e tambem eh possivel verificar o path para uma chave escolhida, selecionando a chave no arquivo JSON e clicando em "get path".
@@ -137,10 +152,10 @@ void main(){
 }
 ```
 
-## Nota Importante 6: Sobre revisoes
+## Nota Importante 7: Sobre revisoes
 * Os modulos 12 (BMI Calculator App) e 13 (Clima App) do Curso de Flutter sao muito bons para revisar conceitos-chave de Dart/Flutter.
 
-## Nota Importante 7: Ciclo de Vida de Stateless e Stateful Widgets
+## Nota Importante 8: Ciclo de Vida de Stateless e Stateful Widgets
 * Quando estamos lidando com Stateless Widgets, devemos nos lembrar de que eles sao imutaveis. Isso quer dizer que toda vez que queremos altera-los, devemos destruir o Stateless Widget para entao cria-lo novamente do zero. Toda vez que a gente cria um Stateless Widget, o que ta de fato acontecendo por de baixo dos panos eh que estamos chamando o metodo "build()" do Stateless Widget.
 * Stateful Widgets nao funcionam dessa maneira. Eles possuem, de fato, um ciclo de vida. Um Stateful Widget possui outros metodos que sao utilizados para que a gente tenha informacao sobre o ciclo de vida do Widget. Sao eles: initState(), build() e deactivate().
 1. initState() -> Esse metodo eh chamado assim que o Widget eh inserido dentro da Widget Tree. Se a gente quer que algo aconteca assim que o nosso Widget eh criado, a gente coloca o que deve acontecer dentro desse metodo.
