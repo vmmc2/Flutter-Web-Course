@@ -15,6 +15,37 @@ Flutter Web Course Assignments
 }
 ```
 * Ja o segundo caso com Stateful Widgets eh mais complicado. De fato, o processo se torna mais complicado porque quando estamos trabalhando com Stateful Widgets, ao cria-los, a gente ta basicamente criando duas classes. Vamos supor que a gente queira criar um Stateful Widget com o nome de "Example". Quando ele eh de fato criado, criam-se dois objetos: O primeiro eh o Example Object e o segundo eh o Example State Object. Ou seja, o stateful widget em si fica separado do seu object. Outro ponto importante eh que os widgets filhos do nosso widget criado vivem dentro do state object. O construtor e os dados/variaveis ficam dentro do Stateful Widget.. Como podemos entao linkar essa parte visual com o conteudo??
+* Em Dart/Flutter, o State consegue se linkar ao seu Stateful Widget por meio de uma propriedade chamada "widget" a qual aponta para o seu respectivo Stateful Widget. Da para acessar o Widget Object dentro do seu respectivo State Object. Isso vale para qualquer Stateful Widget criado em Flutter.
+* Ok, mas como fazer isso em codigo? Observe o exemplo abaixo:
+```dart
+class Example extends StatefulWidget { //Esse stateful widget apresenta uma property/dado chamado info. que eh uma string.
+  final string info;
+  Example({this.info});
+  
+  @override
+  _ExampleState createState() => _ExampleState();
+}
+
+class _ExampleState extends State<Example> { //aqui eh onde fica a parte de UI com os children widget e tudo o mais
+  //suponha que a gente quer ter um text widget aqui dentro que mostre o conteudo da string info. Como podemos ter acesso a esse
+  //conteudo? (uma vez que ele ta em um widget object e nesse escopo estamos em um state object).
+  //Observe o trecho de codigo a seguir:
+  void initState(){
+    super.initState();
+    print(widget.info); // isso faz com que possamos linkar Widget Object com o State Object. E assim, acessar as properties do Widget Object.
+    return;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Text(widget.info),
+      ),
+    );
+  }
+}
+```
 
 ## Nota Importante 2: Reutilizacao de Widgets
 * Eh importante a gente notar quando estamos codando um projeto, se os widgets que estamos utilizando serao reutilizados em outros lugares. Pq isso eh importante? Pq nesse caso, eh muito mais conveniente criar uma class que represente um widget (e essa class naturalmente vai herdar propriedades de um Stateless Widget ou de um Stateful Widget) e alem disso, devemos atribuir um construtor para essa class. Pq devemos atribuir um construtor para a classe? Pq as vezes queremos mudar um atributo mt especifico dessa classe/widget sem perder a funcionalidade/atributos que a classe tambem pode nos ofertar. Ou seja, fazendo isso, estamos aproveitando ao maximo a reusabilidade e o reaproveitamento de Widgets de forma que possamos desenvolver um codigo mais conciso e legivel.
