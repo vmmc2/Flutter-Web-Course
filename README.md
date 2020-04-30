@@ -46,6 +46,21 @@ class _ExampleState extends State<Example> { //aqui eh onde fica a parte de UI c
   }
 }
 ```
+* Existe tambem a possibilidade de realizar a passagem de dados/informacoes de uma tela atual para uma tela anterior. O que acontece quando utilizamos o comando Navigator.pop();
+* Como isso funciona exatamente?
+```dart
+//Suponha que a gente ta dentro de um button e temos o seguinte na funcao onPressed
+onPressed: () {
+  Navigator.pop(context, dado); //A gente passa obrigatoriamente o context para que o Flutter saiba para qual tela a gente tem que voltar
+  //Alem disso, existe um parametro opcional, que nesse caso eu coloquei como "dado". Essa variavel pode ser qualquer coisa: Um int, double, string, list, map, um objeto de uma classe. Pode ser literalmente qualquer coisa q eu quiser.
+}
+
+//Ok, mas para onde essa variavel "dado" vai???
+//Olhando a documentacao do Flutter, a gente percebe que a funcao Navigator.push(); pode retornar um valor/variavel/dado. E eh exatamente ai que vamos receber a nossa variavel "dado". Para receber ela, basta igualar a funcao Navigator.push() a uma variavel.
+
+//Lembre-se.. O usuario pode levar uma quantidade indeterminada de tempo para retornar esse "dado". Logo, use "async" e "await".
+
+```
 
 ## Nota Importante 2: Reutilizacao de Widgets
 * Eh importante a gente notar quando estamos codando um projeto, se os widgets que estamos utilizando serao reutilizados em outros lugares. Pq isso eh importante? Pq nesse caso, eh muito mais conveniente criar uma class que represente um widget (e essa class naturalmente vai herdar propriedades de um Stateless Widget ou de um Stateful Widget) e alem disso, devemos atribuir um construtor para essa class. Pq devemos atribuir um construtor para a classe? Pq as vezes queremos mudar um atributo mt especifico dessa classe/widget sem perder a funcionalidade/atributos que a classe tambem pode nos ofertar. Ou seja, fazendo isso, estamos aproveitando ao maximo a reusabilidade e o reaproveitamento de Widgets de forma que possamos desenvolver um codigo mais conciso e legivel.
