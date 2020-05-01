@@ -108,6 +108,7 @@ PARA FAZER O EDITOR NO MEU ASSEMBLER --> USE A CLASSE TEXTFIELD() CLASS
      -> Procurar documentacao e exemplos.
 (61) ListWheelScrollView
      -> Forma alternativa ao inves de usar o SReordable List View
-     
+(--) DropdownButton
+     -> Eh util quando eu tenho varias opcoes de itens e devo selecionar apenas uma dessas opcoes.
      
 Possiveis nomes pro simulador: Mercury, Vulcan, Pluto, Juno.
