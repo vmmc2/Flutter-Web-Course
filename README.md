@@ -199,7 +199,7 @@ void main(){
 ```
 
 ## Nota Importante 7: Sobre revisoes
-* Os modulos 12 (BMI Calculator App) e 13 (Clima App) do Curso de Flutter sao muito bons para revisar conceitos-chave de Dart/Flutter.
+* Os modulos 12 (BMI Calculator App), 13 (Clima App) e 14 (BitCoin Tracker) do Curso de Flutter sao muito bons para revisar conceitos-chave de Dart/Flutter.
 
 ## Nota Importante 8: Ciclo de Vida de Stateless e Stateful Widgets
 * Quando estamos lidando com Stateless Widgets, devemos nos lembrar de que eles sao imutaveis. Isso quer dizer que toda vez que queremos altera-los, devemos destruir o Stateless Widget para entao cria-lo novamente do zero. Toda vez que a gente cria um Stateless Widget, o que ta de fato acontecendo por de baixo dos panos eh que estamos chamando o metodo "build()" do Stateless Widget.
