@@ -208,6 +208,28 @@ void main(){
 2. build() -> Esse metodo eh chamado assim que o Widget eh construido na tela do nosso aparelho. Se a gente quer que algo aconteca toda vez que o Widget eh reconstruido, a gente coloca essa funcionalidade aqui dentro.
 3. deactivate() -> Esse metodo eh chamado quando o Widget em questao eh destruido. E ele eh destruido assim que o Widget sai da tela. Se a gente quer que algo aconteca quando o nosso Widget em questao for destruido, colocamos a funcionalidade dentro desse metodo.
 
+## Nota Importante 9: Sobre construir UIs especificas baseando-se no SO
+* Em Dart/Flutter eh possivel saber em qual plataforma o nosso aplicativo ta sendo executado e assim planejar de maneira antecipada quais widget queremos mostrar na tela do dispositivo.
+* Essa questao surge principalmente quando estamos falando em aplicativos mobile, pois temos dois sistemas operacionais rivais: Android e iOS.
+* Para podermos nos planejar devemos importar a biblioteca padrao chamada 'io' de Dart usando o comando abaixo:
+```dart
+import 'dart:io';
+//ou da pra fazer tbm desse jeito abaixo.
+import 'dart:io' show Platform;
+```
+* Beleza, mas como fazer essa checagem de fato no nosso codigo? Observe o exemplo a seguir:
+```dart
+
+Widget getPicker(){
+  if(Platform.isIOS){
+    return iOSPicker();
+  }else if(Platform.isAndroid){
+    return androidDropdown();
+  }
+}
+
+```
+
 ## About Lists and Maps
 * When creating a variable that is going to be a List or a Map always initialize it as an empty List or an Empty map. Never declare the List or the Map as null because if you do so, you won't be able to add elements to them and your application will crash.
 
