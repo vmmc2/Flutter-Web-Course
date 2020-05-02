@@ -208,6 +208,9 @@ void main(){
 2. build() -> Esse metodo eh chamado assim que o Widget eh construido na tela do nosso aparelho. Se a gente quer que algo aconteca toda vez que o Widget eh reconstruido, a gente coloca essa funcionalidade aqui dentro.
 3. deactivate() -> Esse metodo eh chamado quando o Widget em questao eh destruido. E ele eh destruido assim que o Widget sai da tela. Se a gente quer que algo aconteca quando o nosso Widget em questao for destruido, colocamos a funcionalidade dentro desse metodo.
 
+## About Lists and Maps
+* When creating a variable that is going to be a List or a Map always initialize it as an empty List or an Empty map. Never declare the List or the Map as null because if you do so, you won't be able to add elements to them and your application will crash.
+
 ## A Quick Intro About The Keywords: "Async" and "Await":
 * These keywords are used when we are working with asyncronous programming. To be more specific, this means that we dealing with time-consuming tasks such as: grab data from the internet, get the current position of our device on Earth and other stuff like that. These types of actions demand a lot of time and by using these keywords specified above we make sure that these requests are running in the background instead of the foreground. We do this because if these tasks were running in the foreground then it would be possible that our application just got frozen. 
 
