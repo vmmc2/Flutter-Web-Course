@@ -7,7 +7,8 @@ class Car{
   Car({this.name});
 }
 
-//Para acessar o parametro "name", eu preciso criar um objeto/instancia dessa classe.
+//Para acessar o parametro "name", eu preciso criar um objeto/instancia dessa classe. Observe o exemplo abaixo:
+print(Car().name);
 //Mas para acessar o parametro "id", eu nao preciso criar um objeto/instancia da classe. Por que essa property "vive" dentro da classe com o valor: "meu_carro".
 //Portanto, para acessar tal property, basta eu codar o seguinte:
 print(Car.id);
