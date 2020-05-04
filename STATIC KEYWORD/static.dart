@@ -23,3 +23,11 @@ print(Car.id);
 
 //A gente usa static variables quando nao faz sentido uma variavel presente em uma classe mudar de objeto para objeto.
 //Se fizer sentido uma variavel mudar de valor de objeto para objeto, NAO USE static variable.
+
+//Se a gente quiser uma constante dentro de uma classe, a gente tem que criar tal constante usando "static const". Observe o exemplo abaixo:
+class Circle{
+  static const double pi = 3.1415926;
+  double radius = 0.0;
+  
+  Circle({this.radius});
+}
