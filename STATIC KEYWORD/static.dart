@@ -12,3 +12,6 @@ print(Car().name);
 //Mas para acessar o parametro "id", eu nao preciso criar um objeto/instancia da classe. Por que essa property "vive" dentro da classe com o valor: "meu_carro".
 //Portanto, para acessar tal property, basta eu codar o seguinte:
 print(Car.id);
+
+//Oq eh interessante a respeito do uso da "static" keyword eh que a gente pode ir fazendo modificacoes nessa variavel "static" por meio da classe.
+//Entretanto, nao da pra ter acesso a variaveis "static" por meio de uma instancia da classe (objeto).
