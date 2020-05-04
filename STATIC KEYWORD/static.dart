@@ -31,3 +31,5 @@ class Circle{
   
   Circle({this.radius});
 }
+
+//Da pra usar "static" keyword tambem com os metodos presentes dentro de uma classe.
