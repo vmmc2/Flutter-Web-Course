@@ -1,0 +1,1 @@
+//Basicamente a keyword "static" quando usada em variaveis dentro de uma classe serve para dizer que essa variavel existe dentro da classe. Sendo assim, eu nao preciso criar um objeto/instancia para ter acesso a essa variavel.
