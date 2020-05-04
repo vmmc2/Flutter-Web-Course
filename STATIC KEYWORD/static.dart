@@ -20,3 +20,6 @@ print(Car.id);
 //Uma instance variable. Que pode ser modificada apenas em instancias/objetos.
 //Agora quando a gente declara uma variavel usando a keyword "static", a gente ta criando uma variavel de classe. Ou, em outras palavras, uma class-wide variable.
 //Esse tipo de variavel so pode ser acessado e alterado por meio de uma classe. Nao pode ser alterado/acessado/modificado por meio de uma instancia.
+
+//A gente usa static variables quando nao faz sentido uma variavel presente em uma classe mudar de objeto para objeto.
+//Se fizer sentido uma variavel mudar de valor de objeto para objeto, NAO USE static variable.
