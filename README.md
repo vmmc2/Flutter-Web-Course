@@ -129,7 +129,7 @@ onPressed: () {
             ),
 ```
 * Importante ter em mente que podemos usar ambos os tipos de navegacao simultaneamente. Assim podemos, por exemplo, navegar diretamente da "screen1.dart" para a "screen2.dart" sem ter que passar pela "screen0.dart".
-
+* Outra observacao importante a respeito de routes eh a respeito da convencao utilizada quando estamos trabalhando com NamedRoutes. Em Flutter, quando trabalhando com esse tipo de routes, costumamos criar um initialRoute: '/' e abaixo criamos um mapa com todas as routes possiveis que existem em nosso aplicativo. Acontece que toda vez que declaramos as routes usando o caractere '/' devemos obrigatoriamente ter uma route que seja composta simplesmente por: "/". Geralmente, essa route eh a initialRoute, responsavel por nos levar a pagina inicial da nossa aplicacao.
 
 ## Nota Importante 4: Customizacao de Widgets
 * Se eu nao estiver satisfeito com as propriedades que eu posso alterar normalmente em um widget, eu posso apelar para a classe ThemeData() para ter uma quantidade maior de possibilidades no que diz respeito a customizacao.
