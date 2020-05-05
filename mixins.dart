@@ -15,3 +15,34 @@ class Maestro extends Person with Musical, Agressive, Demented{
     canConduct = true;
   }
 }
+
+//When we are working with a class A and we want that this class A inherits from a Class B what we do is just use the "extends" keyword so we know
+//that Class B is the parent_clas/super_class of Class A.
+//But there is one problem... In Dart, as well as in many other programming languages, we can inherit from only one class. So what we do is something like this:
+Class Animal{
+  void move(){
+    print('changed my position');  
+  }
+}
+
+Class Bird extends Animal{
+  @override
+  void move(){
+    super.move();
+    print('by flying');
+  }
+}
+
+Class Fish extends Animal{
+  @override
+  void move(){
+    super.move();
+    print('by swimming');
+  }
+}
+
+//But what if we want to create a Class called Duck that can move by swimming and also flying? What should we do if we cannot inherit from more than one class.
+//And if we were able, both these classes have the same method called move() but they are implemented in different ways. So, which one of them we would execute?
+//In Dart, Mixins solve this problem.
+
+
