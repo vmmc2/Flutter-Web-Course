@@ -22,6 +22,7 @@ class Maestro extends Person with Musical, Agressive, Demented{
 Class Animal{
   void move(){
     print('changed my position');  
+    return;
   }
 }
 
@@ -30,6 +31,7 @@ Class Bird extends Animal{
   void move(){
     super.move();
     print('by flying');
+    return;
   }
 }
 
@@ -38,6 +40,7 @@ Class Fish extends Animal{
   void move(){
     super.move();
     print('by swimming');
+    return;
   }
 }
 
@@ -45,4 +48,21 @@ Class Fish extends Animal{
 //And if we were able, both these classes have the same method called move() but they are implemented in different ways. So, which one of them we would execute?
 //In Dart, Mixins solve this problem.
 
+mixin CanFly(){
+  void fly(){
+    print('changed my position by flywing');  
+    return;
+  }
+}
+
+mixin CanSwim(){
+  void swim(){
+    print('changed my position by swimming');  
+    return;
+  }
+}
+
+class Duck extends Animal with CanFly, CanSwim{
+    //We added two new abilites to the Class Duck
+}
 
