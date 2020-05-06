@@ -230,6 +230,9 @@ Widget getPicker(){
 
 ```
 
+## About Stateless and Stateful Widgets
+* We use Stateful Widgets when we have to change the state of our app during its runtime. Or, in other words, when we must use a setState() method. Otherwise, use Stateless Widgets.
+
 ## About Lists and Maps
 * When creating a variable that is going to be a List or a Map always initialize it as an empty List or an Empty map. Never declare the List or the Map as null because if you do so, you won't be able to add elements to them and your application will crash.
 
