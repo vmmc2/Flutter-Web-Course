@@ -1,6 +1,16 @@
 # Flutter-Web-Course
 Flutter Web Course Assignments
 
+## Nota Importante: Problema na hora de enviar mensagens para o Cloud Firestore do Firebase
+* Se por algum acaso, eu estiver enviando dados para o Firestore e der um erro do seguinte tipo na tab 'Run' do Android Studio: "MissingPluginException (MissingPluginException(No implementation found for method DocumentReference#setData on channel plugins.flutter.io/cloud_firestore))" da pra resolver da forma abaixo.
+* Uma possivel solucao eh executar os seguintes comandos dentro do terminal do Android Studio:
+```shell
+flutter clean
+flutter packages get
+```
+* Depois disso, desinstala o app do seu aparelho fisico ou do emulador e bota para rodar de novo.
+
+
 ## Nota Importante: A respeito do problema 'Bottom Overflowed by X pixels'
 * Esse eh um problema bastante comum que costuma acontecer quando temos uma tela em nosso aplicativo e temos campos para serem preenchidos. Quando a gente clica para preencher os campos no mobile app. A gente aciona o teclado, que vai subir na tela e dar o overflow.
 * Como resolver isso? A solucao eh simples. Basta dar um wrap no nosso column/row widget que ta abrangendo os campos de preeenchimento com o widget SingleChildScrollView().
