@@ -230,6 +230,10 @@ Widget getPicker(){
 
 ```
 
+## Nota Importante 10: Sobre o Firebase
+* Eh uma ferramenta bastante util. Da pra usar servicos de banco de dados com ele por meio do Cloud Firebase.
+* Eh ideal e super importante usar banco de dados quando estamos trabalhando com apps de grande escala. No caso, o nome do servico eh Cloud Firestore.
+
 ## About Stateless and Stateful Widgets
 * We use Stateful Widgets when we have to change the state of our app during its runtime. Or, in other words, when we must use a setState() method. Otherwise, use Stateless Widgets.
 
