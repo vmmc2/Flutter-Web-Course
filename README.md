@@ -1,6 +1,10 @@
 # Flutter-Web-Course
 Flutter Web Course Assignments
 
+## Nota Importante: A respeito do problema 'Bottom Overflowed by X pixels'
+* Esse eh um problema bastante comum que costuma acontecer quando temos uma tela em nosso aplicativo e temos campos para serem preenchidos. Quando a gente clica para preencher os campos no mobile app. A gente aciona o teclado, que vai subir na tela e dar o overflow.
+* Como resolver isso? A solucao eh simples. Basta dar um wrap no nosso column/row widget que ta abrangendo os campos de preeenchimento com o widget SingleChildScrollView().
+
 ## Nota Importante 1: Sobre a passagem de dados entre telas/screens diferentes
 * A primeira coisa que devemos ter em mente ao fazer essa transferencia de dados entre telas/screens eh que essas telas/screens nada mais sao do que widgets. Entao, a gente ta simplesmente passando dados entre widgets diferentes que estao localizados em arquivos diferentes mas dentro de um mesmo projeto.
 * O primeiro caso que devemos levar em consideracao eh aquele no qual desejamos passar dados para um Stateless Widget. A forma mais simples de fazer isso eh criar uma variavel dentro desse Stateless Widget do mesmo tipo daquela que pretendemos passar e declarar um construtor para esse widget, de forma que possamos de fato passar tal dado. Observe o exemplo a seguir:
