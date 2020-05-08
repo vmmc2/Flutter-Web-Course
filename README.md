@@ -14,6 +14,7 @@ flutter packages get
 ## Nota Importante: A respeito do problema 'Bottom Overflowed by X pixels'
 * Esse eh um problema bastante comum que costuma acontecer quando temos uma tela em nosso aplicativo e temos campos para serem preenchidos. Quando a gente clica para preencher os campos no mobile app. A gente aciona o teclado, que vai subir na tela e dar o overflow.
 * Como resolver isso? A solucao eh simples. Basta dar um wrap no nosso column/row widget que ta abrangendo os campos de preeenchimento com o widget SingleChildScrollView().
+* Outra possivel abordagem para solucionar o problema eh a seguinte: Se na nossa tela a gente tiver elementos que nao sao tao relevantes(como por exemplo logotipos ou imagens ou outras coisas), a gente pode dar um wrap nesses widgets usando o Flexible() widget.
 
 ## Nota Importante 1: Sobre a passagem de dados entre telas/screens diferentes
 * A primeira coisa que devemos ter em mente ao fazer essa transferencia de dados entre telas/screens eh que essas telas/screens nada mais sao do que widgets. Entao, a gente ta simplesmente passando dados entre widgets diferentes que estao localizados em arquivos diferentes mas dentro de um mesmo projeto.
