@@ -1,5 +1,5 @@
 # Flutter-Web-Course
-Flutter Web Course Assignments
+Relevant notes about the Flutter Web Course on Udemy
 
 ## Nota Importante 1: Problema na hora de enviar mensagens para o Cloud Firestore do Firebase
 * Se por algum acaso, eu estiver enviando dados para o Firestore e der um erro do seguinte tipo na tab 'Run' do Android Studio: "MissingPluginException (MissingPluginException(No implementation found for method DocumentReference#setData on channel plugins.flutter.io/cloud_firestore))" da pra resolver da forma abaixo.
