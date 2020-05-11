@@ -1,6 +1,11 @@
 # Flutter-Web-Course
 Relevant notes about the Flutter Web Course on Udemy
 
+## Nota Importante: Sobre o Container() widget
+* O Container() widget tem seu espaco determinado pelo seu child widget. Se nao tiver child widget, ele nao vai tomar espaco nenhum e, consequentemente, nao vai aparecer na tela do aplicativo.
+* Entretanto, a gente pode forcar o tamanho do Container(), determinando duas de duas propriedades: height e width. Saiba que ambas recebem doubles.
+* Caso queira customizar mais ainda o seu Container() widget, tenha em mente que ele possui uma property chamada 'decoration' que, por sua vez, recebe como valor um widget chamado BoxDecoration().
+
 ## Nota Importante 1: Problema na hora de enviar mensagens para o Cloud Firestore do Firebase
 * Se por algum acaso, eu estiver enviando dados para o Firestore e der um erro do seguinte tipo na tab 'Run' do Android Studio: "MissingPluginException (MissingPluginException(No implementation found for method DocumentReference#setData on channel plugins.flutter.io/cloud_firestore))" da pra resolver da forma abaixo.
 * Uma possivel solucao eh executar os seguintes comandos dentro do terminal do Android Studio:
