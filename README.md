@@ -7,6 +7,7 @@ Relevant notes about the Flutter Web Course on Udemy
 * Caso queira customizar mais ainda o seu Container() widget, tenha em mente que ele possui uma property chamada 'decoration' que, por sua vez, recebe como valor um widget chamado BoxDecoration().
 * Nao da para setar o parametro color em BoxDecoration() e no Container(). Ou seta em um, ou seta em outro.
 * Caso queira definir bordas customizadas para o Container() widget, use a 'property' borderRadius dentro do widget BoxDecoration. La eh possivel certas quais corners vc quer que tenha forma arredonda alem de ser possivel setar o raio desse corner arredondado/circular.
+* Se quiser fazer com que o Container() tome tanto espaco quanto seja possivel na tela, basta colocar ele dentro de um Expanded() widget.
 
 ## Nota Importante 1: Problema na hora de enviar mensagens para o Cloud Firestore do Firebase
 * Se por algum acaso, eu estiver enviando dados para o Firestore e der um erro do seguinte tipo na tab 'Run' do Android Studio: "MissingPluginException (MissingPluginException(No implementation found for method DocumentReference#setData on channel plugins.flutter.io/cloud_firestore))" da pra resolver da forma abaixo.
