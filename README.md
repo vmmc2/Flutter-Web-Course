@@ -4,6 +4,9 @@ Relevant notes about the Flutter Web Course on Udemy
 ## Nota Importante: About States and State Management
 * Oq seria um state? Basicamente, seria o conjunto de valores que juntos formam a Interface de Usuario (UI).
 * Em outras palavras, podemos dizer que a UI eh uma funcao do state.
+* Existem tambem uma diferenca no que diz respeito ao gerenciamento de states, pois existe o que chamamos de Local State e o que chamamos de Global State.
+  * Local State: Eh, como o proprio nome sugere, o estado local de um widget. Normalmente, quando estamos trabalhando com Local State, a gente nao vai utilizar informacoes sobre ele em todo o aplicativo. Apenas em uma parte muito dele. Costuma-se dizer que Local State ta presente em locais muito profundos da Widget Tree.
+  * Global State: 
 
 ## Nota Importante: Sobre o BottomSheet() Widget
 * Esse widget serve para acrescentar informacoes adicionais a uma tela especifica do nosso aplicativo. 
