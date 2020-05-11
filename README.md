@@ -6,7 +6,7 @@ Relevant notes about the Flutter Web Course on Udemy
 * Em outras palavras, podemos dizer que a UI eh uma funcao do state.
 * Existem tambem uma diferenca no que diz respeito ao gerenciamento de states, pois existe o que chamamos de Local State e o que chamamos de Global State.
   * Local State: Eh, como o proprio nome sugere, o estado local de um widget. Normalmente, quando estamos trabalhando com Local State, a gente nao vai utilizar informacoes sobre ele em todo o aplicativo. Apenas em uma parte muito dele. Costuma-se dizer que Local State ta presente em locais muito profundos da Widget Tree.
-  * Global State: 
+  * Global State: Agora quando a gente ta trabalhando com Global State, isso quer dizer que a gente ta salvando o valor de varias variaveis e mantendo o track delas e estamos usando essas variaveis em diferentes partes do nosso aplicativo. A gente tem que atentar para o Global State Management quando uma alteracao em um Stateful Widget nao altera apenas o seu estado em particular, mas tambem altera o estado de outros widgets que estao presente nesse mesmo aplicativo.
 
 ## Nota Importante: Sobre o BottomSheet() Widget
 * Esse widget serve para acrescentar informacoes adicionais a uma tela especifica do nosso aplicativo. 
