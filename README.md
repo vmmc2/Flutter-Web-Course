@@ -1,6 +1,10 @@
 # Flutter-Web-Course
 Relevant notes about the Flutter Web Course on Udemy
 
+## Nota Importante: About States and State Management
+* Oq seria um state? Basicamente, seria o conjunto de valores que juntos formam a Interface de Usuario (UI).
+* Em outras palavras, podemos dizer que a UI eh uma funcao do state.
+
 ## Nota Importante: Sobre o BottomSheet() Widget
 * Esse widget serve para acrescentar informacoes adicionais a uma tela especifica do nosso aplicativo. 
 * Basicamente, existem 2 tipos de BottomSheet() widget. O primeiro chamado de PersistentBottomSheet() eh, como o nome sugere, persistente. Ou seja, ele continua na tela, enquanto podemos interagir nao so com ele mas tambem com outros elementos que tambem estejam presentes na tela. O segundo eh chamado de ModalBottomSheet(). Ele nao fica aparecendo o tempo inteiro na tela e quando estamos interagindo com ele, nao podemos interagir com outros elementos da tela.
