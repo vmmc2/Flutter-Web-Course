@@ -1,7 +1,10 @@
 # Flutter-Web-Course
 Relevant notes about the Flutter Web Course on Udemy
 
-## Nota Importante: Sobre o Container() widget
+## Nota Importante: Sobre o Checkbox() Widget
+* Caso seja necessario, saiba que Flutter conta com um widget chamado Checkbox(), que da pra fazer checkagem e descheckagem de algum widget.
+
+## Nota Importante: Sobre o Container() Widget
 * O Container() widget tem seu espaco determinado pelo seu child widget. Se nao tiver child widget, ele nao vai tomar espaco nenhum e, consequentemente, nao vai aparecer na tela do aplicativo.
 * Entretanto, a gente pode forcar o tamanho do Container(), determinando duas de duas propriedades: height e width. Saiba que ambas recebem doubles.
 * Caso queira customizar mais ainda o seu Container() widget, tenha em mente que ele possui uma property chamada 'decoration' que, por sua vez, recebe como valor um widget chamado BoxDecoration().
