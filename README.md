@@ -4,6 +4,7 @@ Relevant notes about the Flutter Web Course on Udemy
 ## Nota Importante: A respeito do ListView.builder() Widget
 * Não só esse widget como também o ListView() são widgets que só funcionam de boa (sem tá encapsulado) dentro da property "body" do MaterialApp().
 * Caso sua intenção seja colocar ele dentro de uma Column(), Row(), Container() ou qualquer outro widget do framework Flutter, vc precisa primeiro colocar o ListView()/ListView.builder() dentro de um Expanded() Widget.
+* Aparentemente não há uma explicação para funcionar desse jeito (Olhei em fóruns, discussões e nada). Como deu para perceber, não é nem um pouco intuitivo.
 
 ## Nota Importante: Sobre o ListView() Widget
 * Dentro do ListView() widget existe um metodo/property chamado ListBuilder que costuma ser utilizado quando estamos trabalhando com Lists com uma quantidade muito grande (ou ate mesmo infinita de elementos).
