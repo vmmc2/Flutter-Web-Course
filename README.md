@@ -1,16 +1,16 @@
 # Flutter-Web-Course
 Relevant notes about the Flutter Web Course on Udemy
 
-## Nota Importante: A respeito do ListView.builder() Widget
+## Nota Importante 1: A respeito do ListView.builder() Widget
 * Não só esse widget como também o ListView() são widgets que só funcionam de boa (sem tá encapsulado) dentro da property "body" do MaterialApp().
 * Caso sua intenção seja colocar ele dentro de uma Column(), Row(), Container() ou qualquer outro widget do framework Flutter, vc precisa primeiro colocar o ListView()/ListView.builder() dentro de um Expanded() Widget.
 * Aparentemente não há uma explicação para funcionar desse jeito (Olhei em fóruns, discussões e nada). Como deu para perceber, não é nem um pouco intuitivo.
 
-## Nota Importante: Sobre o ListView() Widget
+## Nota Importante 2: Sobre o ListView() Widget
 * Dentro do ListView() widget existe um metodo/property chamado ListBuilder que costuma ser utilizado quando estamos trabalhando com Lists com uma quantidade muito grande (ou ate mesmo infinita de elementos).
 * Ele eh bom pois o custo computacional eh muito baixo. O custo computacional eh baixo pois ele trabalha apenas com os elementos que estao visiveis na tela do dispositivo.
 
-## Nota Importante: About States and State Management
+## Nota Importante 3: About States and State Management
 * Oq seria um state? Basicamente, seria o conjunto de valores que juntos formam a Interface de Usuario (UI).
 * Em outras palavras, podemos dizer que a UI eh uma funcao do state.
 * Existem tambem uma diferenca no que diz respeito ao gerenciamento de states, pois existe o que chamamos de Local State e o que chamamos de Global State.
@@ -19,14 +19,14 @@ Relevant notes about the Flutter Web Course on Udemy
 * Continuando... Sobre State Management temos que quando estamos trabalhando com aplicativos cada vez maiores, a estrategia de usar o Lift-State Up em conjunto com a passagem de CallBacks nao eh a melhor alternativa, pois estaremos trabalhando com aplicacoes que apresentam uma Widget Tree muito profunda e com muitos ramos. Nesse caso, a melhor solucao para lidar com o State Management eh usar packages que foram criados com esse proposito. O time de Flutter recomenda o uso do Provider. Entretanto, existem muitas outras opcoes como: BloC, Mobx, Redux e muitos outros. Nao somos obrigados a usar exclusivamente um deles. O interessante eh analisar o nosso projeto e verificar quais sao as nossas necessidades e assim escolher a ferramenta mais adequada para solucionar aquele problema especifico ou ate mesmo combinar essas ferramentas para podermos resolver esse problema.
 * No caso do Provider, oq ele faz eh o seguinte: Ele faz com que Widgets de nosso interesse sejam capazes de 'escutar' alteracoes/modifcacoes em estados que sejam do interesse desse Widget especifico para que assim ele possa se alterar automaticamente. Ou seja, nao eh mais necessario ficar passando dados atraves da Widget Tree por varios Widgets que nem estao interessados nessa informacao.
 
-## Nota Importante: Sobre o BottomSheet() Widget
+## Nota Importante 4: Sobre o BottomSheet() Widget
 * Esse widget serve para acrescentar informacoes adicionais a uma tela especifica do nosso aplicativo. 
 * Basicamente, existem 2 tipos de BottomSheet() widget. O primeiro chamado de PersistentBottomSheet() eh, como o nome sugere, persistente. Ou seja, ele continua na tela, enquanto podemos interagir nao so com ele mas tambem com outros elementos que tambem estejam presentes na tela. O segundo eh chamado de ModalBottomSheet(). Ele nao fica aparecendo o tempo inteiro na tela e quando estamos interagindo com ele, nao podemos interagir com outros elementos da tela.
 
-## Nota Importante: Sobre o Checkbox() Widget
+## Nota Importante 5: Sobre o Checkbox() Widget
 * Caso seja necessario, saiba que Flutter conta com um widget chamado Checkbox(), que da pra fazer checkagem e descheckagem de algum widget.
 
-## Nota Importante: Sobre o Container() Widget
+## Nota Importante 6: Sobre o Container() Widget
 * O Container() widget tem seu espaco determinado pelo seu child widget. Se nao tiver child widget, ele nao vai tomar espaco nenhum e, consequentemente, nao vai aparecer na tela do aplicativo.
 * Entretanto, a gente pode forcar o tamanho do Container(), determinando duas de duas propriedades: height e width. Saiba que ambas recebem doubles.
 * Caso queira customizar mais ainda o seu Container() widget, tenha em mente que ele possui uma property chamada 'decoration' que, por sua vez, recebe como valor um widget chamado BoxDecoration().
