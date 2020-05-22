@@ -1,5 +1,5 @@
 # Flutter-Web-Course
-Relevant notes about the Flutter Web Course on Udemy
+Relevant notes about the Flutter Web Course on Udemy...
 
 ## Nota Importante 1: A respeito do ListView.builder() Widget
 * Não só esse widget como também o ListView() são widgets que só funcionam de boa (sem tá encapsulado) dentro da property "body" do MaterialApp().
