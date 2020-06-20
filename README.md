@@ -1,6 +1,17 @@
 # Flutter-Web-Course
 Relevant notes about the Flutter Web Course on Udemy...
 
+## Nota Importante: Sobre requisição de localização do dispositivo (via GPS):
+* No caso de nossa aplicação necessitar de dados de localização do dispositivo, uma boa alternativa é usar o package de Flutter chamado Geolocator.
+* Para utilizá-lo, devemos primeiramente adicionar sua respectiva dependência ao arquivo pubsec.yaml:
+```yaml
+dependencies:
+  geolocator: ^3.0.1
+```
+* Em seguida, devemos alterar o contéudo do arquivo Android Manifesto para podermos nos comunicar com o SO da maneira adequada e assim garantir acesso aos dados de localização.
+* Por fim, devemos incluir a biblioteca do Geolocator nos arquivos necessários e, em seguida, podemos usar todas as suas funcionalidades normalmente. 
+* Mais detalhes podem ser encontrados na documentação do package Geolocator.
+
 ## Nota Importante 1: A respeito do ListView.builder() Widget
 * Não só esse widget como também o ListView() são widgets que só funcionam de boa (sem tá encapsulado) dentro da property "body" do MaterialApp().
 * Caso sua intenção seja colocar ele dentro de uma Column(), Row(), Container() ou qualquer outro widget do framework Flutter, vc precisa primeiro colocar o ListView()/ListView.builder() dentro de um Expanded() Widget.
